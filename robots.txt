@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ader0418.github.io/yeh-lawyer-site/sitemap.xml

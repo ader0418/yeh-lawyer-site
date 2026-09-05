@@ -202,6 +202,19 @@
   .news-grid a .ns{font-family:var(--sans);color:var(--rust);font-size:13.5px;letter-spacing:.06em;margin-top:auto}
   .news-grid a .ns::after{content:" ›"}
 
+  /* ---------- ARTICLES ---------- */
+  .articles{background:var(--gray-2)}
+  .art-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1080px;margin:0 auto}
+  @media(max-width:860px){.art-grid{grid-template-columns:1fr;max-width:620px}}
+  .art-card{background:var(--white);border:1px solid var(--line);border-top:3px solid var(--rust);border-radius:4px;padding:30px 30px;display:flex;flex-direction:column;transition:box-shadow .25s,transform .25s}
+  .art-card:hover{box-shadow:0 16px 36px -18px rgba(5,27,57,.32);transform:translateY(-3px)}
+  .art-card .tag{font-family:var(--sans);color:var(--rust);font-size:13px;letter-spacing:.12em;margin-bottom:14px}
+  .art-card h4{font-family:var(--serif);color:var(--navy);font-size:20px;font-weight:600;line-height:1.6;letter-spacing:.01em;margin-bottom:12px}
+  .art-card p{font-family:var(--sans);color:var(--muted);font-size:15px;line-height:1.85;margin-bottom:20px;flex:1}
+  .art-card .more{font-family:var(--serif);color:var(--rust);font-size:15px;letter-spacing:.06em;font-weight:600}
+  .art-card .more::after{content:" ›"}
+  .art-soon{background:var(--white);border:1px dashed var(--line);border-radius:4px;padding:30px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:var(--serif);letter-spacing:.1em;font-size:16px}
+
   /* ---------- CONTACT ---------- */
   .contact{background:var(--navy);color:#e9ecf2}
   .contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:48px;max-width:var(--maxw);margin:0 auto;padding:82px 26px;align-items:center}
@@ -270,6 +283,7 @@
       <a href="#about">關於葉律師</a>
       <a href="#cases">偵辦實績</a>
       <a href="#pubs">學術著作</a>
+      <a href="#articles">法律專欄</a>
       <a href="#contact">聯絡我們</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="選單">☰</button>
@@ -464,6 +478,28 @@
         <a class="anim" href="https://news.ltn.com.tw/news/society/breakingnews/5551579" target="_blank" rel="noopener"><span class="nt">辦過「圓滿一號」REITs 案！士檢主任檢察官葉耀群卸袍轉當律師攻金融犯罪</span><span class="ns">自由時報</span></a>
         <a class="anim" href="https://www.mirrormedia.mg/external/mirrordaily_81632" target="_blank" rel="noopener"><span class="nt">曾破好心肝特權疫苗、億元詐團案！「金融犯罪名檢」葉耀群卸紫袍轉戰律師</span><span class="ns">鏡週刊</span></a>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLES -->
+<section class="block articles reveal" id="articles">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">法 律 專 欄</div>
+      <h2 class="sec-title">實 用 法 律 知 識</h2>
+      <div class="sec-rule"></div>
+      <p class="sec-sub">以檢察官與律師的實務視角，分享面對法律問題時的關鍵提醒。</p>
+    </div>
+    <div class="art-grid">
+      <a class="art-card anim" href="articles/court-summons.html">
+        <div class="tag">刑事偵查</div>
+        <h4>收到地檢署傳票怎麼辦？前檢察官教你 5 個關鍵步驟</h4>
+        <p>收到傳票不等於有罪。搞清楚身分、做好準備、在對的時機尋求協助，是面對偵查最重要的三件事。</p>
+        <span class="more">閱讀全文</span>
+      </a>
+      <div class="art-soon anim">更多文章 陸續發布中…</div>
+      <div class="art-soon anim">更多文章 陸續發布中…</div>
     </div>
   </div>
 </section>

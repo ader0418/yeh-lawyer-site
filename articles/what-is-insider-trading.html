@@ -41,6 +41,17 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"首頁","item":"https://yyclaw.tw/"},
+    {"@type":"ListItem","position":2,"name":"法律專欄","item":"https://yyclaw.tw/#articles"},
+    {"@type":"ListItem","position":3,"name":"什麼是內線交易","item":"https://yyclaw.tw/articles/what-is-insider-trading.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {"@type":"Question","name":"公司內部人完全不能買自家股票嗎？","acceptedAnswer":{"@type":"Answer","text":"不是。內部人受限的是「在知悉尚未公開的重大消息期間」不得買賣；一般情形下，依規定申報後仍可買賣自家股票，也可透過預先訂立的交易計畫進行。關鍵在於是否『實際知悉未公開的重大消息』。"}},
@@ -95,6 +106,10 @@
   .art li{font-size:16.5px;color:var(--ink);line-height:1.95;margin-bottom:10px}
   .callout{background:var(--gray-2);border-left:4px solid var(--rust);border-radius:4px;padding:20px 24px;margin:26px 0}
   .callout p{margin:0;font-size:16px}
+  .tldr{background:#eef2f8;border:1px solid #cdd8e8;border-radius:8px;padding:22px 26px;margin:0 0 30px}
+  .tldr h2{font-family:var(--serif);color:var(--navy);font-size:17px;font-weight:700;letter-spacing:.08em;margin:0 0 12px;padding:0;border:none}
+  .tldr ul{margin:0;padding-left:20px}
+  .tldr li{font-size:15.5px;line-height:1.85;color:var(--ink);margin-bottom:6px}
   .art-table{width:100%;border-collapse:collapse;margin:8px 0 24px;font-size:15.5px}
   .art-table th,.art-table td{border:1px solid var(--line);padding:12px 14px;text-align:left;vertical-align:top;line-height:1.75}
   .art-table th{background:var(--navy);color:#fff;font-family:var(--serif);font-weight:500;letter-spacing:.04em}
@@ -161,6 +176,15 @@
 </div>
 
 <article class="art">
+  <div class="tldr">
+    <h2>重點摘要</h2>
+    <ul>
+      <li>內線交易＝特定內部人在<strong>未公開的重大消息</strong>公開前，買賣該公司股票。</li>
+      <li>四大要件：內部人身分、實際知悉、消息重大且明確、於消息公開前買賣。</li>
+      <li>「內部人」含董監經理人、10% 大股東、消息受領人等六類——<strong>聽消息去買也可能觸法</strong>。</li>
+      <li>刑責：3～10 年有期徒刑，得併科 1,000 萬～2 億元罰金；成立不以獲利為必要。</li>
+    </ul>
+  </div>
   <p class="lead">「知道消息就先買，有什麼問題？」——這是很多人對股市的直覺，卻可能踩到內線交易的法律紅線。內線交易是金融犯罪中最受矚目、也最容易在不知不覺間觸犯的類型之一。以下以我偵辦金融案件的經驗，用白話帶你看懂：什麼是內線交易、要件有哪些、誰會被規範，以及觸法的後果。</p>
 
   <h2>一、內線交易到底是什麼？</h2>

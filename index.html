@@ -192,15 +192,17 @@
   .pub .src a{color:var(--rust)}
   .pub .src a:hover{text-decoration:underline}
 
-  .news{max-width:1000px;margin:44px auto 0}
-  .news-h{font-family:var(--serif);color:var(--navy);font-size:22px;font-weight:600;letter-spacing:.16em;padding-left:.16em;text-align:center;margin-bottom:26px}
+  .news-sec{background:var(--gray-2)}
+  .news{max-width:1040px;margin:0 auto}
   .news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-  @media(max-width:760px){.news-grid{grid-template-columns:1fr}}
-  .news-grid a{background:var(--white);border:1px solid var(--line);border-top:3px solid var(--navy);border-radius:2px;padding:24px 24px;display:flex;flex-direction:column;gap:14px;transition:box-shadow .25s,transform .25s}
+  @media(max-width:860px){.news-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.news-grid{grid-template-columns:1fr}}
+  .news-grid a{background:var(--white);border:1px solid var(--line);border-top:3px solid var(--navy);border-radius:2px;padding:24px 24px;display:flex;flex-direction:column;gap:12px;transition:box-shadow .25s,transform .25s}
   .news-grid a:hover{box-shadow:0 14px 30px -16px rgba(5,27,57,.32);transform:translateY(-3px)}
+  .news-grid a .ntag{align-self:flex-start;font-family:var(--sans);font-size:12.5px;font-weight:500;letter-spacing:.08em;color:var(--rust);border:1px solid var(--rust);border-radius:980px;padding:3px 12px}
   .news-grid a .nt{font-family:var(--serif);color:var(--navy);font-size:16px;font-weight:500;line-height:1.7;letter-spacing:.01em}
-  .news-grid a .ns{font-family:var(--sans);color:var(--rust);font-size:13.5px;letter-spacing:.06em;margin-top:auto}
-  .news-grid a .ns::after{content:" ›"}
+  .news-grid a .ns{font-family:var(--sans);color:var(--muted);font-size:13.5px;letter-spacing:.06em;margin-top:auto}
+  .news-grid a .ns::before{content:"— "}
 
   /* ---------- ARTICLES ---------- */
   .articles{background:var(--gray-2)}
@@ -283,6 +285,7 @@
       <a href="#about">關於葉律師</a>
       <a href="#cases">偵辦實績</a>
       <a href="#pubs">學術著作</a>
+      <a href="#news">新聞報導</a>
       <a href="#articles">法律專欄</a>
       <a href="#contact">聯絡我們</a>
     </nav>
@@ -470,13 +473,24 @@
         <div class="pub"><span class="dot"></span><div><h4>台湾司法修習の現状</h4><div class="src">刑事弁護オアシス · <a href="https://www.keiben-oasis.com/11235" target="_blank" rel="noopener">keiben-oasis.com</a></div></div></div>
       </div>
     </div>
+  </div>
+</section>
 
+<!-- NEWS -->
+<section class="block news-sec reveal" id="news">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">媒 體 報 導</div>
+      <h2 class="sec-title">新 聞 報 導</h2>
+      <div class="sec-rule"></div>
+    </div>
     <div class="news">
-      <div class="news-h">新 聞 報 導</div>
       <div class="news-grid">
-        <a class="anim" href="https://www.ettoday.net/news/20260825/3225621.htm" target="_blank" rel="noopener"><span class="nt">「財金名檢」葉耀群換跑道　17 年金融辦案功力殺進律師界</span><span class="ns">ETtoday</span></a>
-        <a class="anim" href="https://news.ltn.com.tw/news/society/breakingnews/5551579" target="_blank" rel="noopener"><span class="nt">辦過「圓滿一號」REITs 案！士檢主任檢察官葉耀群卸袍轉當律師攻金融犯罪</span><span class="ns">自由時報</span></a>
-        <a class="anim" href="https://www.mirrormedia.mg/external/mirrordaily_81632" target="_blank" rel="noopener"><span class="nt">曾破好心肝特權疫苗、億元詐團案！「金融犯罪名檢」葉耀群卸紫袍轉戰律師</span><span class="ns">鏡週刊</span></a>
+        <a class="anim" href="https://money.udn.com/money/story/5612/9519435" target="_blank" rel="noopener"><span class="ntag">研討會</span><span class="nt">穩定幣、RWA 成金融新戰場　PwC：鏈上金融時代正式來臨</span><span class="ns">經濟日報</span></a>
+        <a class="anim" href="https://news.ltn.com.tw/news/society/breakingnews/5543878" target="_blank" rel="noopener"><span class="ntag">研討會</span><span class="nt">揭弊恐先背責！康友案判賠、京華城案遭起訴　獨董求生全靠「留痕」</span><span class="ns">自由時報</span></a>
+        <a class="anim" href="https://www.ettoday.net/news/20260825/3225621.htm" target="_blank" rel="noopener"><span class="ntag">人物專訪</span><span class="nt">「財金名檢」葉耀群換跑道　17 年金融辦案功力殺進律師界</span><span class="ns">ETtoday</span></a>
+        <a class="anim" href="https://news.ltn.com.tw/news/society/breakingnews/5551579" target="_blank" rel="noopener"><span class="ntag">人物專訪</span><span class="nt">辦過「圓滿一號」REITs 案！士檢主任檢察官葉耀群卸袍轉當律師攻金融犯罪</span><span class="ns">自由時報</span></a>
+        <a class="anim" href="https://www.mirrormedia.mg/external/mirrordaily_81632" target="_blank" rel="noopener"><span class="ntag">人物專訪</span><span class="nt">曾破好心肝特權疫苗、億元詐團案！「金融犯罪名檢」葉耀群卸紫袍轉戰律師</span><span class="ns">鏡週刊</span></a>
       </div>
     </div>
   </div>

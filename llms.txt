@@ -16,6 +16,10 @@
 - [收到地檢署傳票怎麼辦？前檢察官教你 5 個關鍵步驟](https://yyclaw.tw/articles/court-summons.html)：說明傳票與通知書的差別、如何確認身分（被告／證人／關係人）、出庭前準備、是否委任律師與出庭當天注意事項。
 - [什麼是內線交易？構成要件、刑責與常見迷思一次看懂](https://yyclaw.tw/articles/what-is-insider-trading.html)：以證券交易法第 157 條之 1 為核心，說明內線交易四大構成要件、內部人六大類型、重大消息認定，以及刑責（3～10 年有期徒刑）與民事賠償。
 - [虛擬貨幣詐騙如何自保？識破 5 大詐術與受害後處理](https://yyclaw.tw/articles/crypto-scam-protection.html)：說明常見詐術、事先查證方法、受害後如何保全證據與報案（165）、以及被騙款項的追回可能性。
+- [獨立董事、董事有哪些法律責任與風險？](https://yyclaw.tw/articles/director-liability.html)：說明董事的注意義務與忠實義務、財報不實與特別背信的刑事風險，以及獨立董事如何以積極監督與留痕自保。
+- [什麼是背信罪？構成要件、刑責與公司負責人常見風險](https://yyclaw.tw/articles/breach-of-trust.html)：說明刑法背信罪的四大構成要件、與證交法特別背信的差別（3～10 年），以及掏空、利益輸送等常見情境。
+- [財報不實有什麼刑事責任？構成要件與董事風險](https://yyclaw.tw/articles/financial-statement-fraud.html)：說明財報不實的民事（證交法第 20 條之 1）與刑事責任（第 171 條）、重大性判斷與董事的過失推定風險。
+- [操縱股價（炒股）會犯什麼罪？](https://yyclaw.tw/articles/market-manipulation.html)：說明證券交易法第 155 條禁止的操縱行為類型（連續交易、相對委託、沖洗買賣等）、刑責與常見誤區。
 
 ## 主要頁面
 - [首頁](https://yyclaw.tw/)：葉耀群律師簡介、專業服務、學經歷、偵辦實績、學術著作、新聞報導與聯絡方式。

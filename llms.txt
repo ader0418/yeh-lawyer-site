@@ -20,6 +20,7 @@
 - [什麼是背信罪？構成要件、刑責與公司負責人常見風險](https://yyclaw.tw/articles/breach-of-trust.html)：說明刑法背信罪的四大構成要件、與證交法特別背信的差別（3～10 年），以及掏空、利益輸送等常見情境。
 - [財報不實有什麼刑事責任？構成要件與董事風險](https://yyclaw.tw/articles/financial-statement-fraud.html)：說明財報不實的民事（證交法第 20 條之 1）與刑事責任（第 171 條）、重大性判斷與董事的過失推定風險。
 - [操縱股價（炒股）會犯什麼罪？](https://yyclaw.tw/articles/market-manipulation.html)：說明證券交易法第 155 條禁止的操縱行為類型（連續交易、相對委託、沖洗買賣等）、刑責與常見誤區。
+- [什麼是洗錢？會不小心觸犯洗錢防制法嗎？](https://yyclaw.tw/articles/money-laundering.html)：說明洗錢防制法規範的行為、一般人最常踩雷的人頭帳戶情境、警示帳戶的後果，以及收到通知時如何自保。
 
 ## 主要頁面
 - [首頁](https://yyclaw.tw/)：葉耀群律師簡介、專業服務、學經歷、偵辦實績、學術著作、新聞報導與聯絡方式。

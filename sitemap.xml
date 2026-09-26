@@ -61,6 +61,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://yyclaw.tw/articles/illegal-remittance.html</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://yyclaw.tw/llms.txt</loc>
     <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>

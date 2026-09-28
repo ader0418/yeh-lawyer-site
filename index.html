@@ -29,52 +29,75 @@
 <!-- favicon (天秤圖示) -->
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%23B35C45'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M12%203v18'/%3E%3Cpath%20d='M6%2021h12'/%3E%3Cpath%20d='M4%207h16'/%3E%3Cpath%20d='M7%207l-3%206a3%203%200%200%200%206%200z'/%3E%3Cpath%20d='M17%207l-3%206a3%203%200%200%200%206%200z'/%3E%3C/svg%3E" />
 
-<!-- 結構化資料 (JSON-LD) -->
+<!-- 結構化資料 (JSON-LD)：實體圖 @graph -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Attorney",
-  "name": "葉耀群律師",
-  "alternateName": "Yao-Chun Yeh",
-  "image": "https://yyclaw.tw/assets/portrait.jpg",
-  "url": "https://yyclaw.tw/",
-  "jobTitle": "品牌長／數位金融部執行長",
-  "worksFor": {
-    "@type": "LegalService",
-    "name": "合曜國際法律事務所",
-    "alternateName": "HE SHINE ATTORNEYS-AT-LAW"
-  },
-  "telephone": "+886-2-2700-3220",
-  "faxNumber": "+886-2-2700-7091",
-  "email": "yyc@heshine.com.tw",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "仁愛路四段85號12樓B室",
-    "addressLocality": "大安區",
-    "addressRegion": "臺北市",
-    "postalCode": "106",
-    "addressCountry": "TW"
-  },
-  "knowsAbout": ["證券交易法", "金融犯罪偵查", "詐欺與洗錢防制", "公司誠信治理與反貪腐", "企業永續治理與法規遵循", "數位金融服務", "虛擬資產法制"],
-  "alumniOf": ["國立臺北大學", "東吳大學", "日本早稻田大學"],
-  "areaServed": "TW",
-  "sameAs": [
-    "https://www.ettoday.net/news/20260825/3225621.htm",
-    "https://news.ltn.com.tw/news/society/breakingnews/5551579",
-    "https://www.mirrormedia.mg/external/mirrordaily_81632",
-    "https://money.udn.com/money/story/5612/9519435",
-    "https://line.me/R/ti/p/%40665nqsat"
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://yyclaw.tw/#person",
+      "name": "葉耀群律師",
+      "alternateName": "Yao-Chun Yeh",
+      "description": "葉耀群律師，合曜國際法律事務所品牌長暨數位金融部執行長，前臺灣士林地方檢察署主任檢察官，長年偵辦重大金融犯罪案件。專精證券交易法、金融犯罪偵查、詐欺與洗錢防制、公司治理與數位金融法制。",
+      "image": "https://yyclaw.tw/assets/portrait.jpg",
+      "url": "https://yyclaw.tw/",
+      "jobTitle": "品牌長／數位金融部執行長",
+      "worksFor": { "@id": "https://yyclaw.tw/#firm" },
+      "knowsAbout": ["證券交易法", "金融犯罪偵查", "詐欺與洗錢防制", "公司誠信治理與反貪腐", "企業永續治理與法規遵循", "數位金融服務", "虛擬資產法制", "銀行法", "內線交易", "財報不實", "操縱股價", "背信罪"],
+      "alumniOf": ["國立臺北大學", "東吳大學", "日本早稻田大學"],
+      "hasOccupation": { "@type": "Occupation", "name": "律師" },
+      "sameAs": [
+        "https://www.ettoday.net/news/20260825/3225621.htm",
+        "https://news.ltn.com.tw/news/society/breakingnews/5551579",
+        "https://www.mirrormedia.mg/external/mirrordaily_81632",
+        "https://money.udn.com/money/story/5612/9519435",
+        "https://line.me/R/ti/p/%40665nqsat"
+      ]
+    },
+    {
+      "@type": "LegalService",
+      "@id": "https://yyclaw.tw/#firm",
+      "name": "合曜國際法律事務所",
+      "alternateName": "HE SHINE ATTORNEYS-AT-LAW",
+      "url": "https://yyclaw.tw/",
+      "image": "https://yyclaw.tw/assets/portrait.jpg",
+      "telephone": "+886-2-2700-3220",
+      "faxNumber": "+886-2-2700-7091",
+      "email": "yyc@heshine.com.tw",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "仁愛路四段85號12樓B室",
+        "addressLocality": "大安區",
+        "addressRegion": "臺北市",
+        "postalCode": "106",
+        "addressCountry": "TW"
+      },
+      "areaServed": "TW",
+      "employee": { "@id": "https://yyclaw.tw/#person" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://yyclaw.tw/#website",
+      "name": "葉耀群律師 ｜ 合曜國際法律事務所",
+      "url": "https://yyclaw.tw/",
+      "inLanguage": "zh-Hant",
+      "publisher": { "@id": "https://yyclaw.tw/#person" }
+    }
   ]
 }
 </script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "葉耀群律師 ｜ 合曜國際法律事務所",
-  "url": "https://yyclaw.tw/",
-  "inLanguage": "zh-Hant",
-  "publisher": { "@type": "Person", "name": "葉耀群律師" }
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"葉耀群律師的專長領域是什麼？","acceptedAnswer":{"@type":"Answer","text":"葉耀群律師專精證券交易法、金融犯罪偵查、詐欺與洗錢防制、公司誠信治理與反貪腐、企業永續治理與法規遵循，以及數位金融與虛擬資產法制。曾長年偵辦內線交易、財報不實、操縱股價、背信、非法吸金、地下匯兌等重大金融案件。"}},
+    {"@type":"Question","name":"如何預約葉耀群律師諮詢？","acceptedAnswer":{"@type":"Answer","text":"可透過合曜國際法律事務所 LINE 官方帳號 @665nqsat 線上諮詢，或電話 02-2700-3220 聯繫預約。"}},
+    {"@type":"Question","name":"合曜國際法律事務所在哪裡？服務哪些地區？","acceptedAnswer":{"@type":"Answer","text":"合曜國際法律事務所位於 106 臺北市大安區仁愛路四段 85 號 12 樓 B 室，主要服務臺灣地區。"}},
+    {"@type":"Question","name":"葉耀群律師曾任職檢察官嗎？","acceptedAnswer":{"@type":"Answer","text":"是。葉耀群律師曾任臺灣士林地方檢察署主任檢察官、臺灣臺北地方檢察署檢察官（重大金融公訴、檢肅黑金專組），並曾擔任法務部司法官學院導師。"}}
+  ]
 }
 </script>
 
@@ -234,6 +257,17 @@
   .art-card .more{font-family:var(--serif);color:var(--rust);font-size:15px;letter-spacing:.06em;font-weight:600}
   .art-card .more::after{content:" ›"}
   .art-soon{background:var(--white);border:1px dashed var(--line);border-radius:4px;padding:30px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:var(--serif);letter-spacing:.1em;font-size:16px}
+
+  /* ---------- HOME FAQ ---------- */
+  .faqs{background:var(--white)}
+  .hfaq{max-width:820px;margin:0 auto}
+  .hfaq details{border:1px solid var(--line);border-radius:8px;margin-bottom:14px;background:var(--gray-2);overflow:hidden}
+  .hfaq summary{cursor:pointer;list-style:none;padding:20px 26px;font-family:var(--serif);font-size:18px;font-weight:600;color:var(--navy);display:flex;justify-content:space-between;align-items:center;gap:14px}
+  .hfaq summary::-webkit-details-marker{display:none}
+  .hfaq summary::after{content:"＋";color:var(--rust);font-size:22px;flex:0 0 auto}
+  .hfaq details[open] summary::after{content:"－"}
+  .hfaq .a{padding:0 26px 22px;font-size:16px;color:var(--ink);line-height:1.95}
+  .hfaq .a a{color:var(--rust)}
 
   /* ---------- CONTACT ---------- */
   .contact{background:var(--navy);color:#e9ecf2}
@@ -584,6 +618,23 @@
         <p>幫人跨境搬錢賺匯差也會犯法嗎？依銀行法第 29、125 條說明地下匯兌的判準、態樣、刑責與洗錢關聯。</p>
         <span class="more">閱讀全文</span>
       </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="block faqs reveal" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">常 見 問 題</div>
+      <h2 class="sec-title">關 於 葉 律 師</h2>
+      <div class="sec-rule"></div>
+    </div>
+    <div class="hfaq">
+      <details class="anim"><summary>葉耀群律師的專長領域是什麼？</summary><div class="a">葉耀群律師專精證券交易法、金融犯罪偵查、詐欺與洗錢防制、公司誠信治理與反貪腐、企業永續治理與法規遵循，以及數位金融與虛擬資產法制。曾長年偵辦內線交易、財報不實、操縱股價、背信、非法吸金、地下匯兌等重大金融案件。</div></details>
+      <details class="anim"><summary>如何預約葉耀群律師諮詢？</summary><div class="a">可透過合曜國際法律事務所 LINE 官方帳號 <a href="https://line.me/R/ti/p/%40665nqsat" target="_blank" rel="noopener">@665nqsat</a> 線上諮詢，或電話 <a href="tel:+886227003220">02-2700-3220</a> 聯繫預約。</div></details>
+      <details class="anim"><summary>合曜國際法律事務所在哪裡？服務哪些地區？</summary><div class="a">合曜國際法律事務所位於 106 臺北市大安區仁愛路四段 85 號 12 樓 B 室，主要服務臺灣地區。</div></details>
+      <details class="anim"><summary>葉耀群律師曾任職檢察官嗎？</summary><div class="a">是。葉耀群律師曾任臺灣士林地方檢察署主任檢察官、臺灣臺北地方檢察署檢察官（重大金融公訴、檢肅黑金專組），並曾擔任法務部司法官學院導師。</div></details>
     </div>
   </div>
 </section>

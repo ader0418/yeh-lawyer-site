@@ -434,6 +434,9 @@
   .line-btn{display:inline-flex;align-items:center;gap:14px;background:#06C755;color:#fff;border-radius:14px;padding:15px 30px;margin-top:28px;transition:transform .2s,box-shadow .2s;box-shadow:0 10px 24px -8px rgba(6,199,85,.65)}
   .line-btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px -8px rgba(6,199,85,.8)}
   .line-btn svg{flex:0 0 auto}
+  .form-btn{display:inline-flex;align-items:center;gap:10px;margin-top:16px;margin-left:12px;background:transparent;color:#eef1f6;border:1px solid rgba(255,255,255,.4);border-radius:14px;padding:14px 26px;font-family:var(--serif);font-size:16px;font-weight:600;letter-spacing:.06em;transition:all .2s;vertical-align:top}
+  .form-btn:hover{border-color:#d99a86;color:#d99a86}
+  @media(max-width:520px){.form-btn{margin-left:0;display:flex;justify-content:center}}
   .line-btn .lt{display:flex;flex-direction:column;line-height:1.25}
   .line-btn .lt b{font-family:var(--serif);font-size:20px;font-weight:700;letter-spacing:.1em;padding-left:.1em}
   .line-btn .lt small{font-family:var(--sans);font-size:12.5px;color:rgba(255,255,255,.9);letter-spacing:.04em;margin-top:2px}
@@ -825,6 +828,10 @@
       <a class="line-btn" href="https://line.me/R/ti/p/%40665nqsat" target="_blank" rel="noopener" aria-label="LINE 線上諮詢">
         <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2C6.5 2 2 5.6 2 10.1c0 4 3.6 7.4 8.4 8 .3.07.78.22.9.5.1.26.07.66.03.92l-.14.87c-.04.26-.2 1.02.9.56 1.1-.46 5.96-3.5 8.13-6C21.5 13.4 22 11.8 22 10.1 22 5.6 17.5 2 12 2zM8.2 12.8H6.2c-.3 0-.5-.24-.5-.53V8.3c0-.3.2-.53.5-.53.28 0 .5.24.5.53v3.44h1.5c.3 0 .5.24.5.53s-.22.53-.5.53zm2-.53c0 .3-.22.53-.5.53s-.5-.24-.5-.53V8.3c0-.3.22-.53.5-.53s.5.24.5.53v3.97zm4.6 0c0 .23-.14.43-.35.5a.5.5 0 0 1-.16.03c-.16 0-.3-.08-.4-.2l-2-2.77v2.44c0 .3-.22.53-.5.53s-.5-.24-.5-.53V8.3c0-.23.14-.43.35-.5.2-.07.44 0 .56.17l2.04 2.78V8.3c0-.3.22-.53.5-.53s.5.24.5.53v3.97zm3.2-2.5c.3 0 .5.24.5.53s-.2.53-.5.53h-1.5v.9h1.5c.3 0 .5.24.5.53s-.2.54-.5.54h-2c-.3 0-.5-.24-.5-.53V8.3c0-.3.2-.53.5-.53h2c.3 0 .5.24.5.53s-.2.53-.5.53h-1.5v.9h1.5z"/></svg>
         <span class="lt"><b>點我諮詢</b><small>LINE 線上諮詢 · @665nqsat</small></span>
+      </a>
+      <a class="form-btn" href="consult.html">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/></svg>
+        <span>填寫線上諮詢表單</span>
       </a>
     </div>
     <div class="map-frame">

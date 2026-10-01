@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>線上法律諮詢表單｜葉耀群律師</title>
+<meta name="description" content="填寫線上法律諮詢表單，葉耀群律師（合曜國際法律事務所）將盡快與您聯繫。專精金融犯罪、證券交易法、洗錢防制、公司治理等案件。" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#051B39" />
+<link rel="canonical" href="https://yyclaw.tw/consult.html" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%23B35C45'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M12%203v18'/%3E%3Cpath%20d='M6%2021h12'/%3E%3Cpath%20d='M4%207h16'/%3E%3Cpath%20d='M7%207l-3%206a3%203%200%200%200%206%200z'/%3E%3Cpath%20d='M17%207l-3%206a3%203%200%200%200%206%200z'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+<style>
+  :root{--navy:#051B39;--rust:#B35C45;--rust-d:#9c4c38;--ink:#393939;--muted:#6b6b6b;--gray-bg:#e8e5e0;--gray-2:#f2f0ec;--line:#d8d3ca;--white:#fff;--ok:#2f7d5b;--serif:"Noto Serif TC","Songti TC",serif;--sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--ink);background:var(--gray-2);line-height:1.9;-webkit-font-smoothing:antialiased}
+  a{color:var(--rust);text-decoration:none}
+
+  header.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:74px;max-width:1160px;margin:0 auto;padding:0 26px}
+  .brand{display:flex;align-items:center;gap:14px}
+  .brand .bt{font-family:var(--serif);color:var(--navy);font-size:22px;font-weight:600;letter-spacing:.18em;padding-left:.18em}
+  .nav-links{display:flex;gap:30px}
+  .nav-links a{font-family:var(--serif);color:var(--navy);font-size:16px;letter-spacing:.08em}
+  .nav-links a:hover{color:var(--rust)}
+  @media(max-width:680px){.nav-links{display:none}}
+
+  .hero{background:var(--navy);color:#fff;text-align:center;padding:52px 26px 46px}
+  .hero .kick{font-family:var(--serif);color:#d99a86;letter-spacing:.3em;font-size:15px;margin-bottom:12px;padding-left:.3em}
+  .hero h1{font-family:var(--serif);font-size:clamp(28px,4.5vw,40px);font-weight:600;letter-spacing:.06em}
+  .hero p{color:#c9d3e2;font-size:16px;margin-top:14px;max-width:46ch;margin-left:auto;margin-right:auto}
+
+  .wrap{max-width:720px;margin:-28px auto 60px;padding:0 20px}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:36px 34px;box-shadow:0 10px 40px -24px rgba(5,27,57,.4)}
+
+  .note{background:var(--gray-2);border-left:4px solid var(--rust);border-radius:4px;padding:14px 18px;font-size:13.5px;color:var(--muted);line-height:1.8;margin-bottom:28px}
+
+  form label{display:block;font-family:var(--serif);color:var(--navy);font-size:15.5px;font-weight:600;margin-bottom:7px;letter-spacing:.02em}
+  form label .req{color:var(--rust);font-weight:700;margin-left:3px}
+  .field{margin-bottom:22px}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:560px){.row2{grid-template-columns:1fr}}
+  input[type=text],input[type=email],input[type=tel],select,textarea{
+    width:100%;font-family:var(--sans);font-size:15.5px;color:var(--ink);background:var(--white);
+    border:1px solid var(--line);border-radius:8px;padding:12px 14px;transition:border-color .2s,box-shadow .2s;
+  }
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--rust);box-shadow:0 0 0 3px rgba(179,92,69,.12)}
+  textarea{min-height:140px;resize:vertical;line-height:1.7}
+  select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b6b6b' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:40px}
+  .hint{font-size:12.5px;color:var(--muted);margin-top:5px}
+
+  .agree{display:flex;gap:11px;align-items:flex-start;background:var(--gray-2);border-radius:8px;padding:14px 16px;margin-bottom:24px}
+  .agree input{margin-top:4px;flex:0 0 auto;width:17px;height:17px;accent-color:var(--rust)}
+  .agree label{font-family:var(--sans);font-weight:400;font-size:13.5px;color:var(--ink);line-height:1.75;margin:0}
+
+  .submit{width:100%;background:var(--navy);color:#fff;border:none;border-radius:10px;padding:16px;font-family:var(--serif);font-size:18px;font-weight:600;letter-spacing:.1em;cursor:pointer;transition:background .2s,transform .2s}
+  .submit:hover{background:var(--rust)}
+  .submit:disabled{opacity:.6;cursor:not-allowed}
+
+  .alt{text-align:center;margin-top:22px;font-size:14.5px;color:var(--muted)}
+  .alt a{font-weight:600}
+  .line-inline{display:inline-flex;align-items:center;gap:7px;background:#06C755;color:#fff;border-radius:8px;padding:8px 16px;font-weight:600;font-size:14px;margin-top:4px}
+  .line-inline:hover{text-decoration:none}
+
+  .result{display:none;text-align:center;padding:28px 8px}
+  .result.show{display:block}
+  .result .ic{width:64px;height:64px;border-radius:50%;background:var(--ok);display:grid;place-items:center;margin:0 auto 18px}
+  .result .ic svg{width:34px;height:34px;stroke:#fff;stroke-width:3;fill:none}
+  .result h2{font-family:var(--serif);color:var(--navy);font-size:24px;font-weight:600;margin-bottom:10px}
+  .result p{color:var(--muted);font-size:15.5px;line-height:1.8}
+  .err{display:none;margin-top:16px;background:#fbece8;border:1px solid #e3b4a8;color:var(--rust-d);border-radius:8px;padding:12px 16px;font-size:14px}
+  .err.show{display:block}
+
+  footer{background:#03132a;color:#7f90a8;text-align:center;padding:26px;font-size:13px;letter-spacing:.04em;line-height:1.9}
+  footer a{color:#9fb0c8}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#B35C45" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M6 21h12"/><path d="M4 7h16"/><path d="M7 7l-3 6a3 3 0 0 0 6 0z"/><path d="M17 7l-3 6a3 3 0 0 0 6 0z"/></svg>
+      <span class="bt">葉耀群 律師</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#services">專業服務</a>
+      <a href="index.html#articles">法律專欄</a>
+      <a href="index.html#contact">聯絡我們</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="kick">ONLINE CONSULTATION</div>
+  <h1>線上法律諮詢</h1>
+  <p>請填寫以下資訊，葉耀群律師將盡快與您聯繫。欄位越完整，越能協助我們快速掌握案情。</p>
+</section>
+
+<div class="wrap">
+  <div class="card">
+    <div id="formArea">
+      <div class="note">＊本表單僅供初步諮詢聯繫之用，<strong>填寫本表單並不成立委任關係</strong>，亦不構成正式法律意見。所填資料僅用於與您聯繫及案件初步評估。緊急事件（如明日開庭、今日約談）請直接來電或 LINE。</div>
+
+      <form id="consultForm">
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+        <input type="hidden" name="subject" value="【網站諮詢】新的線上法律諮詢" />
+        <input type="hidden" name="from_name" value="yyclaw.tw 線上諮詢表單" />
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
+
+        <div class="row2">
+          <div class="field">
+            <label>姓名／稱呼<span class="req">*</span></label>
+            <input type="text" name="姓名" required placeholder="如：王先生／陳小姐" />
+          </div>
+          <div class="field">
+            <label>聯絡電話<span class="req">*</span></label>
+            <input type="tel" name="聯絡電話" required placeholder="0912-345-678" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label>電子郵件<span class="req">*</span></label>
+          <input type="email" name="email" required placeholder="your@email.com" />
+          <div class="hint">我們將以此信箱與您聯繫並寄送確認。</div>
+        </div>
+
+        <div class="row2">
+          <div class="field">
+            <label>案件類型<span class="req">*</span></label>
+            <select name="案件類型" required>
+              <option value="" disabled selected>請選擇</option>
+              <option>證券交易法／內線交易</option>
+              <option>財報不實／操縱股價</option>
+              <option>背信／掏空／非常規交易</option>
+              <option>非法吸金／地下匯兌（銀行法）</option>
+              <option>洗錢／人頭帳戶／警示帳戶</option>
+              <option>詐騙（被害或被控）</option>
+              <option>公司治理／股東會／董事責任</option>
+              <option>刑事偵查（搜索、傳票、約談）</option>
+              <option>其他</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>您目前的身分<span class="req">*</span></label>
+            <select name="目前身分" required>
+              <option value="" disabled selected>請選擇</option>
+              <option>被告／犯罪嫌疑人</option>
+              <option>證人</option>
+              <option>告訴人／被害人</option>
+              <option>公司負責人／董事、監察人</option>
+              <option>股東</option>
+              <option>關係人／尚不確定</option>
+              <option>其他</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>是否有急迫期限？（如開庭、約談、聲請期限的日期）</label>
+          <input type="text" name="急迫期限" placeholder="如：2026/10/15 上午 10 時 地檢署約談；若無可留空" />
+        </div>
+
+        <div class="field">
+          <label>事實經過與想諮詢的問題<span class="req">*</span></label>
+          <textarea name="事實經過與諮詢問題" required placeholder="請簡述：發生了什麼事、目前進度（是否已收到傳票/搜索/起訴）、涉及金額、以及您最想問的問題。"></textarea>
+          <div class="hint">請勿填寫身分證字號、帳號密碼等高度敏感個資。</div>
+        </div>
+
+        <div class="row2">
+          <div class="field">
+            <label>是否已委任其他律師？</label>
+            <select name="是否已委任其他律師">
+              <option value="" disabled selected>請選擇</option>
+              <option>尚未委任</option>
+              <option>已委任，想尋求其他意見</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>偏好聯絡方式</label>
+            <select name="偏好聯絡方式">
+              <option value="" disabled selected>請選擇</option>
+              <option>電話</option>
+              <option>電子郵件</option>
+              <option>LINE</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="agree">
+          <input type="checkbox" id="agree" required />
+          <label for="agree">我已了解，填寫本表單<strong>不成立委任關係</strong>、不構成正式法律意見，並同意事務所以我提供的聯絡方式與我聯繫。</label>
+        </div>
+
+        <button type="submit" class="submit" id="submitBtn">送出諮詢</button>
+        <div class="err" id="errBox"></div>
+      </form>
+
+      <div class="alt">
+        想更快聯繫？　<a class="line-inline" href="https://line.me/R/ti/p/%40665nqsat" target="_blank" rel="noopener">LINE 線上諮詢 · @665nqsat</a>
+      </div>
+    </div>
+
+    <div class="result" id="resultBox">
+      <div class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+      <h2>已收到您的諮詢</h2>
+      <p>感謝您的來訊，我們已收到您的資料，葉耀群律師或事務所將盡快與您聯繫。<br/>若為急迫事件，建議同時以電話 02-2700-3220 或 LINE @665nqsat 與我們聯繫。</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  合曜國際法律事務所 HE SHINE ATTORNEYS-AT-LAW　·　葉耀群 律師　Yao-Chun Yeh<br />
+  <a href="index.html">← 返回首頁</a>　·　<a href="https://heshine.tw/linkes7ftpn6/copy-of" target="_blank" rel="noopener">合曜國際法律事務所簡介</a>
+</footer>
+
+<script>
+  var form=document.getElementById('consultForm');
+  var btn=document.getElementById('submitBtn');
+  var errBox=document.getElementById('errBox');
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    errBox.classList.remove('show');
+    var key=form.querySelector('[name=access_key]').value;
+    if(key==='YOUR_WEB3FORMS_ACCESS_KEY'){
+      errBox.textContent='表單尚未設定收件金鑰（access_key）。請先完成設定後再送出。';
+      errBox.classList.add('show'); return;
+    }
+    btn.disabled=true; btn.textContent='送出中…';
+    try{
+      var data=new FormData(form);
+      var res=await fetch('https://api.web3forms.com/submit',{method:'POST',body:data});
+      var json=await res.json();
+      if(json.success){
+        document.getElementById('formArea').style.display='none';
+        document.getElementById('resultBox').classList.add('show');
+        window.scrollTo({top:0,behavior:'smooth'});
+      }else{ throw new Error(json.message||'送出失敗'); }
+    }catch(err){
+      errBox.textContent='送出失敗，請稍後再試，或改用電話／LINE 與我們聯繫。（'+err.message+'）';
+      errBox.classList.add('show');
+      btn.disabled=false; btn.textContent='送出諮詢';
+    }
+  });
+</script>
+</body>
+</html>

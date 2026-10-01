@@ -130,33 +130,34 @@
 
         <div class="row2">
           <div class="field">
-            <label>案件類型<span class="req">*</span></label>
-            <select name="案件類型" required>
+            <label>案件型態<span class="req">*</span></label>
+            <select name="案件型態" id="caseKind" required>
               <option value="" disabled selected>請選擇</option>
-              <option>證券交易法／內線交易</option>
-              <option>財報不實／操縱股價</option>
-              <option>背信／掏空／非常規交易</option>
-              <option>非法吸金／地下匯兌（銀行法）</option>
-              <option>洗錢／人頭帳戶／警示帳戶</option>
-              <option>詐騙（被害或被控）</option>
-              <option>公司治理／股東會／董事責任</option>
-              <option>刑事偵查（搜索、傳票、約談）</option>
-              <option>其他</option>
+              <option>民事</option>
+              <option>刑事</option>
             </select>
           </div>
           <div class="field">
-            <label>您目前的身分<span class="req">*</span></label>
-            <select name="目前身分" required>
-              <option value="" disabled selected>請選擇</option>
-              <option>被告／犯罪嫌疑人</option>
-              <option>證人</option>
-              <option>告訴人／被害人</option>
-              <option>公司負責人／董事、監察人</option>
-              <option>股東</option>
-              <option>關係人／尚不確定</option>
-              <option>其他</option>
+            <label>案件類型<span class="req">*</span></label>
+            <select name="案件類型" id="caseType" required disabled>
+              <option value="" disabled selected>請先選擇案件型態</option>
             </select>
           </div>
+        </div>
+
+        <div class="field">
+          <label>您目前的身分<span class="req">*</span></label>
+          <select name="目前身分" required>
+            <option value="" disabled selected>請選擇</option>
+            <option>被告／犯罪嫌疑人</option>
+            <option>證人</option>
+            <option>告訴人／被害人／原告</option>
+            <option>被告（民事）</option>
+            <option>公司負責人／董事、監察人</option>
+            <option>股東</option>
+            <option>關係人／尚不確定</option>
+            <option>其他</option>
+          </select>
         </div>
 
         <div class="field">
@@ -218,6 +219,18 @@
 </footer>
 
 <script>
+  // 案件型態 → 案件類型 連動
+  var CASE_TYPES={
+    '民事':['金錢給付與債權請求','侵權行為損害賠償','不動產物權與租賃爭議','勞動事件','家事訴訟與非訟爭議','其他'],
+    '刑事':['財產犯罪（詐欺、竊盜、侵占、背信）','傷害與過失致傷、致死犯罪','妨害名譽及信用罪','毒品危害防制條例案件','證券交易法','銀行法','公司法','營業秘密法','其他']
+  };
+  var caseKind=document.getElementById('caseKind'), caseType=document.getElementById('caseType');
+  caseKind.addEventListener('change',function(){
+    var list=CASE_TYPES[caseKind.value]||[];
+    caseType.innerHTML='<option value="" disabled selected>請選擇</option>'+list.map(function(o){return '<option>'+o+'</option>';}).join('');
+    caseType.disabled=false;
+  });
+
   var form=document.getElementById('consultForm');
   var btn=document.getElementById('submitBtn');
   var errBox=document.getElementById('errBox');

@@ -422,7 +422,7 @@
 
   /* ---------- CONTACT ---------- */
   .contact{background:var(--navy);color:#e9ecf2}
-  .contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:48px;max-width:var(--maxw);margin:0 auto;padding:82px 26px;align-items:center}
+  .contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:48px;max-width:var(--maxw);margin:0 auto;padding:82px 26px;align-items:start}
   @media(max-width:820px){.contact-inner{grid-template-columns:1fr;gap:34px;padding:64px 26px}}
   .contact h2{font-family:var(--serif);color:#fff;font-size:clamp(26px,3.6vw,36px);font-weight:600;letter-spacing:.2em;padding-left:.2em;margin-bottom:8px}
   .contact .csub{font-family:var(--serif);color:#d99a86;letter-spacing:.3em;font-size:15px;margin-bottom:30px;padding-left:.3em}
@@ -443,8 +443,38 @@
   .line-btn .lt b{font-family:var(--serif);font-size:20px;font-weight:700;letter-spacing:.1em;padding-left:.1em}
   .line-btn .lt small{font-family:var(--sans);font-size:12.5px;color:rgba(255,255,255,.9);letter-spacing:.04em;margin-top:2px}
 
-  .map{width:100%;height:100%;min-height:340px;border:0;border-radius:4px;filter:grayscale(.2)}
-  .map-frame{border:1px solid rgba(255,255,255,.16);border-radius:6px;overflow:hidden;min-height:340px}
+  .map{width:100%;height:100%;min-height:260px;border:0;border-radius:4px;filter:grayscale(.2)}
+  .map-frame{border:1px solid rgba(255,255,255,.16);border-radius:6px;overflow:hidden;min-height:260px;margin-top:28px}
+
+  /* 首頁精簡諮詢表單卡 */
+  .qf-card{background:#fff;border-radius:14px;padding:32px 30px;box-shadow:0 20px 54px -26px rgba(0,0,0,.6)}
+  .qf-card .qf-h{font-family:var(--serif);color:var(--navy);font-size:22px;font-weight:600;letter-spacing:.08em;margin-bottom:6px}
+  .qf-card .qf-sub{font-family:var(--sans);color:#6b6b6b;font-size:13px;line-height:1.75;margin-bottom:22px}
+  .qf-field{margin-bottom:16px}
+  .qf-row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:480px){.qf-row2{grid-template-columns:1fr;gap:0}}
+  .qf-card label{display:block;font-family:var(--serif);color:var(--navy);font-size:14.5px;font-weight:600;margin-bottom:6px;letter-spacing:.02em}
+  .qf-card label .req{color:var(--rust);margin-left:3px}
+  .qf-card input,.qf-card select,.qf-card textarea{width:100%;font-family:var(--sans);font-size:15px;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:8px;padding:11px 13px;transition:border-color .2s,box-shadow .2s}
+  .qf-card input:focus,.qf-card select:focus,.qf-card textarea:focus{outline:none;border-color:var(--rust);box-shadow:0 0 0 3px rgba(179,92,69,.12)}
+  .qf-card textarea{min-height:96px;resize:vertical;line-height:1.7}
+  .qf-card select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b6b6b' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center;padding-right:38px}
+  .qf-agree{display:flex;gap:10px;align-items:flex-start;margin:6px 0 18px}
+  .qf-agree input{margin-top:3px;flex:0 0 auto;width:16px;height:16px;accent-color:var(--rust)}
+  .qf-agree label{font-family:var(--sans);font-weight:400;font-size:12.5px;color:#555;line-height:1.7;margin:0}
+  .qf-submit{width:100%;background:var(--navy);color:#fff;border:none;border-radius:10px;padding:15px;font-family:var(--serif);font-size:17px;font-weight:600;letter-spacing:.1em;cursor:pointer;transition:background .2s}
+  .qf-submit:hover{background:var(--rust)}
+  .qf-submit:disabled{opacity:.6;cursor:not-allowed}
+  .qf-full{text-align:center;margin-top:15px;font-size:12.5px;color:#6b6b6b;line-height:1.7}
+  .qf-full a{font-weight:600}
+  .qf-err{display:none;margin-top:14px;background:#fbece8;border:1px solid #e3b4a8;color:var(--rust-d);border-radius:8px;padding:11px 14px;font-size:13.5px}
+  .qf-err.show{display:block}
+  .qf-done{display:none;text-align:center;padding:36px 10px}
+  .qf-done.show{display:block}
+  .qf-done .ic{width:58px;height:58px;border-radius:50%;background:#2f7d5b;display:grid;place-items:center;margin:0 auto 16px}
+  .qf-done .ic svg{width:30px;height:30px;stroke:#fff;stroke-width:3;fill:none}
+  .qf-done .dh{font-family:var(--serif);color:var(--navy);font-size:21px;font-weight:600;margin-bottom:8px}
+  .qf-done p{color:#6b6b6b;font-size:13.5px;line-height:1.85}
 
   footer{background:#03132a;color:#7f90a8;text-align:center;padding:26px 0;font-size:13px;font-family:var(--sans);letter-spacing:.04em}
 
@@ -848,13 +878,67 @@
         <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2C6.5 2 2 5.6 2 10.1c0 4 3.6 7.4 8.4 8 .3.07.78.22.9.5.1.26.07.66.03.92l-.14.87c-.04.26-.2 1.02.9.56 1.1-.46 5.96-3.5 8.13-6C21.5 13.4 22 11.8 22 10.1 22 5.6 17.5 2 12 2zM8.2 12.8H6.2c-.3 0-.5-.24-.5-.53V8.3c0-.3.2-.53.5-.53.28 0 .5.24.5.53v3.44h1.5c.3 0 .5.24.5.53s-.22.53-.5.53zm2-.53c0 .3-.22.53-.5.53s-.5-.24-.5-.53V8.3c0-.3.22-.53.5-.53s.5.24.5.53v3.97zm4.6 0c0 .23-.14.43-.35.5a.5.5 0 0 1-.16.03c-.16 0-.3-.08-.4-.2l-2-2.77v2.44c0 .3-.22.53-.5.53s-.5-.24-.5-.53V8.3c0-.23.14-.43.35-.5.2-.07.44 0 .56.17l2.04 2.78V8.3c0-.3.22-.53.5-.53s.5.24.5.53v3.97zm3.2-2.5c.3 0 .5.24.5.53s-.2.53-.5.53h-1.5v.9h1.5c.3 0 .5.24.5.53s-.2.54-.5.54h-2c-.3 0-.5-.24-.5-.53V8.3c0-.3.2-.53.5-.53h2c.3 0 .5.24.5.53s-.2.53-.5.53h-1.5v.9h1.5z"/></svg>
         <span class="lt"><b>點我諮詢</b><small>LINE 線上諮詢 · @665nqsat</small></span>
       </a>
-      <a class="form-btn" href="consult.html">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/></svg>
-        <span>填寫線上諮詢表單</span>
-      </a>
+      <div class="map-frame">
+        <iframe class="map" src="https://www.google.com/maps?q=%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%AE%89%E5%8D%80%E4%BB%81%E6%84%9B%E8%B7%AF%E5%9B%9B%E6%AE%B585%E8%99%9F&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="事務所位置"></iframe>
+      </div>
     </div>
-    <div class="map-frame">
-      <iframe class="map" src="https://www.google.com/maps?q=%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%AE%89%E5%8D%80%E4%BB%81%E6%84%9B%E8%B7%AF%E5%9B%9B%E6%AE%B585%E8%99%9F&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="事務所位置"></iframe>
+
+    <div class="qf-card">
+      <div id="qfArea">
+        <div class="qf-h">線上快速諮詢</div>
+        <div class="qf-sub">填寫以下基本資訊即可送出，葉律師或事務所將盡快與您聯繫。填寫本表單不成立委任關係，亦不構成正式法律意見。</div>
+        <form id="qfForm">
+          <input type="hidden" name="access_key" value="77126211-4184-42d5-9f85-f5551424facd" />
+          <input type="hidden" name="subject" value="【網站諮詢】新的線上諮詢（首頁快速表單）" />
+          <input type="hidden" name="from_name" value="yyclaw.tw 首頁快速諮詢" />
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <div class="qf-row2">
+            <div class="qf-field">
+              <label>姓名／稱呼<span class="req">*</span></label>
+              <input type="text" name="姓名" required placeholder="如：王先生／陳小姐" />
+            </div>
+            <div class="qf-field">
+              <label>聯絡電話<span class="req">*</span></label>
+              <input type="tel" name="聯絡電話" required placeholder="0912-345-678" />
+            </div>
+          </div>
+
+          <div class="qf-field">
+            <label>電子郵件<span class="req">*</span></label>
+            <input type="email" name="email" required placeholder="your@email.com" />
+          </div>
+
+          <div class="qf-field">
+            <label>案件型態<span class="req">*</span></label>
+            <select name="案件型態" required>
+              <option value="" disabled selected>請選擇</option>
+              <option>民事</option>
+              <option>刑事</option>
+            </select>
+          </div>
+
+          <div class="qf-field">
+            <label>想諮詢的問題<span class="req">*</span></label>
+            <textarea name="想諮詢的問題" required placeholder="請簡述發生了什麼事、目前進度（是否已收到傳票／搜索／起訴）與您最想問的問題。"></textarea>
+          </div>
+
+          <div class="qf-agree">
+            <input type="checkbox" id="qfAgree" required />
+            <label for="qfAgree">我已了解填寫本表單不成立委任關係、不構成正式法律意見，並同意事務所以我提供的聯絡方式與我聯繫。</label>
+          </div>
+
+          <button type="submit" class="qf-submit" id="qfBtn">送出諮詢</button>
+          <div class="qf-err" id="qfErr"></div>
+        </form>
+        <div class="qf-full">需要更完整的案件說明？　<a href="consult.html">填寫完整諮詢表單 →</a></div>
+      </div>
+
+      <div class="qf-done" id="qfDone">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="dh">已收到您的諮詢</div>
+        <p>感謝您的來訊，我們已收到您的資料，葉律師或事務所將盡快與您聯繫。<br/>若為急迫事件，建議同時以電話 02-2700-3220 或 LINE @665nqsat 與我們聯繫。</p>
+      </div>
     </div>
   </div>
 </section>
@@ -870,6 +954,29 @@
   l.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){l.classList.remove('open')})});
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
   document.querySelectorAll('.reveal, .anim').forEach(function(el){io.observe(el)});
+
+  // 首頁快速諮詢表單送出
+  var qf=document.getElementById('qfForm');
+  if(qf){
+    var qfBtn=document.getElementById('qfBtn'),qfErr=document.getElementById('qfErr');
+    qf.addEventListener('submit',async function(e){
+      e.preventDefault();
+      qfErr.classList.remove('show');
+      qfBtn.disabled=true; qfBtn.textContent='送出中…';
+      try{
+        var res=await fetch('https://api.web3forms.com/submit',{method:'POST',body:new FormData(qf)});
+        var json=await res.json();
+        if(json.success){
+          document.getElementById('qfArea').style.display='none';
+          document.getElementById('qfDone').classList.add('show');
+        }else{ throw new Error(json.message||'送出失敗'); }
+      }catch(err){
+        qfErr.textContent='送出失敗，請稍後再試，或改用電話／LINE 與我們聯繫。（'+err.message+'）';
+        qfErr.classList.add('show');
+        qfBtn.disabled=false; qfBtn.textContent='送出諮詢';
+      }
+    });
+  }
 </script>
 </body>
 </html>

@@ -27,7 +27,11 @@
 <meta name="twitter:image" content="https://yyclaw.tw/assets/portrait.jpg" />
 
 <!-- favicon (天秤圖示) -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%23B35C45'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M12%203v18'/%3E%3Cpath%20d='M6%2021h12'/%3E%3Cpath%20d='M4%207h16'/%3E%3Cpath%20d='M7%207l-3%206a3%203%200%200%200%206%200z'/%3E%3Cpath%20d='M17%207l-3%206a3%203%200%200%200%206%200z'/%3E%3C/svg%3E" />
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+<link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
 
 <!-- 結構化資料 (JSON-LD)：實體圖 @graph -->
 <script type="application/ld+json">
@@ -334,8 +338,8 @@
   .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin:-6px 0 34px}
   .hbtn{display:inline-flex;align-items:center;gap:10px;border-radius:12px;padding:15px 28px;font-family:var(--serif);font-size:17px;font-weight:600;letter-spacing:.08em;transition:transform .2s,box-shadow .2s}
   .hbtn:hover{transform:translateY(-2px);text-decoration:none}
-  .hbtn-line{background:#06C755;color:#fff;box-shadow:0 12px 26px -10px rgba(6,199,85,.7)}
-  .hbtn-line:hover{box-shadow:0 16px 30px -10px rgba(6,199,85,.85)}
+  .hbtn-line{background:var(--rust);color:#fff;box-shadow:0 12px 26px -10px rgba(179,92,69,.6)}
+  .hbtn-line:hover{background:var(--rust-d);box-shadow:0 16px 30px -10px rgba(179,92,69,.75)}
   .hbtn-ghost{background:transparent;color:var(--navy);border:1.5px solid var(--navy)}
   .hbtn-ghost:hover{background:var(--navy);color:#fff}
   .principles li{display:flex;gap:16px;align-items:flex-start}
@@ -544,8 +548,8 @@
   }
 
   /* 導覽列 LINE 諮詢按鈕 */
-  .nav-line{display:inline-flex;align-items:center;gap:8px;background:#06C755;color:#fff;border-radius:999px;padding:10px 20px;font-family:var(--serif);font-size:15px;font-weight:600;letter-spacing:.06em;white-space:nowrap;box-shadow:0 8px 18px -8px rgba(6,199,85,.7);transition:transform .2s,box-shadow .2s}
-  .nav-line:hover{transform:translateY(-1px);box-shadow:0 12px 22px -8px rgba(6,199,85,.85);text-decoration:none;color:#fff}
+  .nav-line{display:inline-flex;align-items:center;gap:8px;background:var(--rust);color:#fff;border-radius:999px;padding:10px 20px;font-family:var(--serif);font-size:15px;font-weight:600;letter-spacing:.06em;white-space:nowrap;box-shadow:0 8px 18px -8px rgba(179,92,69,.6);transition:transform .2s,box-shadow .2s,background .2s}
+  .nav-line:hover{transform:translateY(-1px);background:var(--rust-d);box-shadow:0 12px 22px -8px rgba(179,92,69,.75);text-decoration:none;color:#fff}
   .nav-line svg{flex:0 0 auto}
   .nav-links a,.brand .bt{white-space:nowrap}
   @media(max-width:1300px){.nav-links{gap:22px}}

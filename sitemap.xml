@@ -14,13 +14,13 @@
   </url>
   <url>
     <loc>https://yyclaw.tw/corruption.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://yyclaw.tw/financial-crime.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -67,8 +67,14 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://yyclaw.tw/articles/detention-after-questioning.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://yyclaw.tw/articles/court-summons.html</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -146,7 +152,7 @@
   </url>
   <url>
     <loc>https://yyclaw.tw/articles/search-warrant.html</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

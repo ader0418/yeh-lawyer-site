@@ -37,11 +37,21 @@
   "description": "依銀行法第29條、第29-1條說明「視為收受存款」的判準、常見吸金態樣、第125條刑責，以及介紹人與自首自白的風險與減免。",
   "image": "https://yyclaw.tw/assets/portrait.jpg",
   "datePublished": "2026-09-26",
-  "dateModified": "2026-10-07",
-  "author": { "@type": "Person", "@id": "https://yyclaw.tw/#person", "name": "葉耀群律師", "url": "https://yyclaw.tw/about.html" },
-  "publisher": { "@id": "https://yyclaw.tw/#firm", "name": "合曜國際法律事務所" },
+  "dateModified": "2026-10-24",
+  "author": {
+    "@type": "Person",
+    "@id": "https://yyclaw.tw/#person",
+    "name": "葉耀群",
+    "url": "https://yyclaw.tw/about.html"
+  },
+  "publisher": {
+    "@id": "https://yyclaw.tw/#firm",
+    "name": "合曜國際法律事務所"
+  },
   "mainEntityOfPage": "https://yyclaw.tw/articles/bank-illegal-fundraising.html",
-  "isPartOf": { "@id": "https://yyclaw.tw/#website" },
+  "isPartOf": {
+    "@id": "https://yyclaw.tw/#website"
+  },
   "articleSection": "金融犯罪",
   "inLanguage": "zh-Hant"
 }
@@ -166,21 +176,24 @@
   .authorbox p{font-size:14.5px;line-height:1.85;color:#555;margin:0 0 8px}
   .authorbox a.ab-more{font-family:var(--serif);color:var(--rust);font-weight:600;font-size:14.5px;letter-spacing:.04em}
   @media(max-width:520px){.authorbox .ab{flex-direction:column;gap:14px}}
+  /* 先答後述答案句 */
+  .ans{background:#fff;border:1px solid var(--line);border-left:4px solid var(--navy);border-radius:4px;padding:16px 20px;margin:0 0 18px;font-size:16.5px;line-height:1.95;color:var(--ink)}
+  .cite{font-size:14px;color:var(--muted)}
 </style>
 </head>
 <body>
 
 <header class="nav">
   <div class="nav-inner">
-    <a href="../index.html" class="brand">
+    <a href="/" class="brand">
       <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#B35C45" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M6 21h12"/><path d="M4 7h16"/><path d="M7 7l-3 6a3 3 0 0 0 6 0z"/><path d="M17 7l-3 6a3 3 0 0 0 6 0z"/></svg>
       <span class="bt">葉耀群 律師</span>
     </a>
     <nav class="nav-links">
-      <a href="../index.html#about">關於葉律師</a>
-      <a href="../index.html#services">專業服務</a>
-      <a href="../index.html#articles">法律專欄</a>
-      <a href="../index.html#contact">聯絡我們</a>
+      <a href="/#about">關於葉律師</a>
+      <a href="/#services">專業服務</a>
+      <a href="/#articles">法律專欄</a>
+      <a href="/#contact">聯絡我們</a>
     </nav>
     <a class="nav-line" href="https://line.me/R/ti/p/%40665nqsat" target="_blank" rel="noopener" aria-label="LINE 線上諮詢"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg><span>LINE 線上諮詢</span></a>
   </div>
@@ -188,10 +201,10 @@
 
 <div class="art-hero">
   <div class="art-hero-in">
-    <div class="crumb"><a href="../index.html">首頁</a>　›　<a href="../financial-crime.html">金融犯罪律師</a>　›　什麼是非法吸金</div>
+    <div class="crumb"><a href="/">首頁</a>　›　<a href="../financial-crime.html">金融犯罪律師</a>　›　什麼是非法吸金</div>
     <div class="art-kicker">法 律 專 欄</div>
     <h1>什麼是非法吸金？<br />銀行法的責任與刑責一次看懂</h1>
-    <div class="art-meta"><span class="by"><a href="../about.html" style="color:inherit">葉耀群 律師</a></span><span>合曜國際法律事務所</span><span>發布：2026-09-26</span><span>更新：2026-10-07</span></div>
+    <div class="art-meta"><span class="by"><a href="../about.html" style="color:inherit">葉耀群 律師</a></span><span>合曜國際法律事務所</span><span>發布：2026-09-26</span><span>更新：2026-10-24</span></div>
   </div>
 </div>
 
@@ -208,10 +221,12 @@
   <p class="lead">「保證月息 3%、穩賺不賠、還能拉人領獎金」——這類方案聽起來誘人，卻可能是違反銀行法的「非法吸金」。非法吸金（俗稱地下投資、違法吸金）是重大金融犯罪，不只主導者，連在其中招攬、拉下線的人都可能被追究。以下以銀行法條文為本，說明什麼是非法吸金、判準、刑責與自保之道。</p>
 
   <h2>一、什麼是非法吸金？先看銀行法第 29 條</h2>
+  <p class="ans"><strong>非法吸金是指非銀行未經許可，向社會大眾收受存款或吸收資金；銀行法第 29 條規定，除法律另有規定外，非銀行不得經營收受存款業務。</strong></p>
   <p>銀行之所以能「收受存款」，是因為受到嚴格的特許與監理。因此法律規定：<strong>除法律另有規定外，非銀行不得經營收受存款業務</strong>。任何人未經許可，向社會大眾吸收資金、辦理類似存款的業務，就是踩到這條紅線。</p>
   <div class="lawbox"><div class="ln">銀行法 第 29 條（節錄）</div><p>除法律另有規定者外，非銀行不得經營收受存款、受託經理信託資金、公眾財產或辦理國內外匯兌業務。</p></div>
 
   <h2>二、關鍵條文：什麼算「視為收受存款」？</h2>
+  <p class="ans"><strong>依銀行法第 29 條之 1，以借款、收受投資、使加入為股東等任何名義，向多數人或不特定人收受款項或吸收資金，並約定或給付與本金顯不相當的報酬，就以收受存款論。</strong></p>
   <p>很多吸金方案會辯稱「這是投資、不是存款」。但銀行法第 29-1 條設有<strong>「視為收受存款」</strong>的規定，把換了名目的吸金一併納管：</p>
   <div class="lawbox"><div class="ln">銀行法 第 29-1 條</div><p>以借款、收受投資、使加入為股東或其他名義，向多數人或不特定之人收受款項或吸收資金，而約定或給付與本金<strong>顯不相當</strong>之紅利、利息、股息或其他報酬者，以收受存款論。</p></div>
   <p>白話拆解，同時具備下列特徵就可能該當：</p>
@@ -221,7 +236,8 @@
     <li><strong>約定或給付「與本金顯不相當」的報酬</strong>：這是核心——保證的紅利、利息明顯高於正常行情。</li>
   </ul>
 
-  <h2>三、常見的非法吸金態樣</h2>
+  <h2>三、非法吸金常見哪些包裝？</h2>
+  <p class="ans"><strong>常見保證高獲利的投資方案、靠拉下線發獎金的老鼠會模式，以及包裝成虛擬貨幣、區塊鏈、外匯、能源、農場等題材；只要向不特定多數人吸金並保證顯不相當的報酬，不論名目都可能違法。</strong></p>
   <ul>
     <li><strong>保證高獲利的投資方案</strong>：固定月息、保本保息、穩賺不賠。</li>
     <li><strong>老鼠會／多層次拉下線</strong>：以介紹獎金鼓勵會員拉人加入，靠後金補前金。</li>
@@ -231,14 +247,17 @@
   <div class="warn"><p><strong>判斷關鍵：只要「向不特定多數人吸金」＋「保證與本金顯不相當的報酬」，不論包裝成什麼，都可能是非法吸金。</strong></p></div>
 
   <h2>四、刑責有多重？銀行法第 125 條</h2>
+  <p class="ans"><strong>處 3 年以上 10 年以下有期徒刑，得併科 1,000 萬元以上 2 億元以下罰金；因犯罪獲取之財物或財產上利益達 1 億元以上者，處 7 年以上有期徒刑，得併科 2,500 萬元以上 5 億元以下罰金。</strong></p>
   <p>非法吸金是刑度很高的重罪：</p>
   <div class="lawbox"><div class="ln">銀行法 第 125 條（節錄）</div><p>違反第二十九條第一項規定者，處<strong>三年以上十年以下</strong>有期徒刑，得併科新臺幣一千萬元以上二億元以下罰金。其因犯罪獲取之財物或財產上利益達新臺幣<strong>一億元以上</strong>者，處<strong>七年以上</strong>有期徒刑，得併科新臺幣二千五百萬元以上五億元以下罰金。……法人犯前二項之罪者，處罰其行為負責人。</p></div>
   <p>也就是說，吸金規模越大（犯罪所得達 1 億元以上）刑度越重；若以公司名義為之，處罰的是公司的<strong>行為負責人</strong>。</p>
 
   <h2>五、誰會被追究？不是只有主導者</h2>
+  <p class="ans"><strong>除了幕後主導者，幹部、業務、講師，以及積極對外招攬、拉人領獎金的人，都可能依參與程度被認定為共同正犯或幫助犯。</strong></p>
   <p>非法吸金往往是一整個組織在運作。除了幕後主導者，<strong>擔任幹部、業務、講師，或積極對外招攬、拉人加入領取獎金的人</strong>，都可能依其參與程度被認定為共同正犯或幫助犯。很多人以為「我只是幫忙介紹、自己也有投錢」就沒事，這是危險的誤解。</p>
 
-  <h2>六、自首與自白，可能減免刑責</h2>
+  <h2>六、自首或自白可以減刑嗎？</h2>
+  <p class="ans"><strong>可以。依銀行法第 125 條之 4，自首並自動繳交全部犯罪所得者，減輕或免除其刑；偵查中自白並自動繳交全部犯罪所得者，減輕其刑；因而查獲其他正犯或共犯者，還能進一步減免。</strong></p>
   <p>銀行法第 125-4 條給了一條重要的出路：</p>
   <ul>
     <li><strong>犯後自首</strong>並自動繳交全部犯罪所得者，<strong>減輕或免除其刑</strong>；並因而查獲其他正犯或共犯者，免除其刑。</li>
@@ -247,6 +266,7 @@
   <div class="callout"><p>這代表：一旦涉入非法吸金，<strong>越早面對、越早在律師協助下處理（自首、自白、繳回所得）</strong>，越有機會爭取減免。拖延或湮滅證據，通常只會讓情況更糟。</p></div>
 
   <h2>七、民眾如何辨識與自保？</h2>
+  <p class="ans"><strong>對「保證獲利、穩賺不賠、高利分紅」一律警覺，先查證業者是否為合法金融機構，不因獎金替方案拉親友加入；已涉入者應保全資料、儘早報案並諮詢律師。</strong></p>
   <ul>
     <li><strong>對「保證獲利、穩賺不賠、高利分紅」一律警覺</strong>——正常投資不會保證報酬。</li>
     <li><strong>查證業者是否為合法金融機構</strong>、是否有相應的營業許可。</li>
@@ -303,7 +323,7 @@
   </div>
 </section>
 
-<div class="back-home"><a href="../index.html">← 返回首頁</a></div>
+<div class="back-home"><a href="/">← 返回首頁</a></div>
 
 <footer>
   合曜國際法律事務所 HE SHINE ATTORNEYS-AT-LAW　·　葉耀群 律師　Yao-Chun Yeh<br />

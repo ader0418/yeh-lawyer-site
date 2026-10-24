@@ -34,15 +34,21 @@
   "description": "白話說明刑法背信罪的構成要件、與特別背信的差別、公司負責人常見風險與刑責。",
   "image": "https://yyclaw.tw/assets/portrait.jpg",
   "datePublished": "2026-09-06",
-  "dateModified": "2026-10-12",
-  "author": { "@type": "Person", "@id": "https://yyclaw.tw/#person", "name": "葉耀群律師", "url": "https://yyclaw.tw/about.html" },
+  "dateModified": "2026-10-24",
+  "author": {
+    "@type": "Person",
+    "@id": "https://yyclaw.tw/#person",
+    "name": "葉耀群",
+    "url": "https://yyclaw.tw/about.html"
+  },
   "publisher": {
-    "@type": "LegalService",
-    "name": "合曜國際法律事務所",
-    "alternateName": "HE SHINE ATTORNEYS-AT-LAW"
+    "@id": "https://yyclaw.tw/#firm",
+    "name": "合曜國際法律事務所"
   },
   "mainEntityOfPage": "https://yyclaw.tw/articles/breach-of-trust.html",
-  "isPartOf": { "@id": "https://yyclaw.tw/#website" },
+  "isPartOf": {
+    "@id": "https://yyclaw.tw/#website"
+  },
   "articleSection": "金融犯罪",
   "inLanguage": "zh-Hant"
 }
@@ -201,18 +207,21 @@
   .authorbox p{font-size:14.5px;line-height:1.85;color:#555;margin:0 0 8px}
   .authorbox a.ab-more{font-family:var(--serif);color:var(--rust);font-weight:600;font-size:14.5px;letter-spacing:.04em}
   @media(max-width:520px){.authorbox .ab{flex-direction:column;gap:14px}}
+  /* 先答後述答案句 */
+  .ans{background:#fff;border:1px solid var(--line);border-left:4px solid var(--navy);border-radius:4px;padding:16px 20px;margin:0 0 18px;font-size:16.5px;line-height:1.95;color:var(--ink)}
+  .cite{font-size:14px;color:var(--muted)}
 </style>
 </head>
 <body>
 
 <header class="nav">
   <div class="nav-inner">
-    <a href="../index.html" class="brand"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#B35C45" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M6 21h12"/><path d="M4 7h16"/><path d="M7 7l-3 6a3 3 0 0 0 6 0z"/><path d="M17 7l-3 6a3 3 0 0 0 6 0z"/></svg><span class="bt">葉耀群 律師</span></a>
+    <a href="/" class="brand"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#B35C45" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M6 21h12"/><path d="M4 7h16"/><path d="M7 7l-3 6a3 3 0 0 0 6 0z"/><path d="M17 7l-3 6a3 3 0 0 0 6 0z"/></svg><span class="bt">葉耀群 律師</span></a>
     <nav class="nav-links">
-      <a href="../index.html#about">關於葉律師</a>
-      <a href="../index.html#services">專業服務</a>
-      <a href="../index.html#articles">法律專欄</a>
-      <a href="../index.html#contact">聯絡我們</a>
+      <a href="/#about">關於葉律師</a>
+      <a href="/#services">專業服務</a>
+      <a href="/#articles">法律專欄</a>
+      <a href="/#contact">聯絡我們</a>
     </nav>
     <a class="nav-line" href="https://line.me/R/ti/p/%40665nqsat" target="_blank" rel="noopener" aria-label="LINE 線上諮詢"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg><span>LINE 線上諮詢</span></a>
   </div>
@@ -220,10 +229,10 @@
 
 <div class="art-hero">
   <div class="art-hero-in">
-    <div class="crumb"><a href="../index.html">首頁</a>　›　<a href="../financial-crime.html">金融犯罪律師</a>　›　什麼是背信罪</div>
+    <div class="crumb"><a href="/">首頁</a>　›　<a href="../financial-crime.html">金融犯罪律師</a>　›　什麼是背信罪</div>
     <div class="art-kicker">法 律 專 欄</div>
     <h1>什麼是背信罪？<br />構成要件、刑責與公司負責人常見風險</h1>
-    <div class="art-meta"><span class="by"><a href="../about.html" style="color:inherit">葉耀群 律師</a></span><span>合曜國際法律事務所</span><span>發布：2026-09-06</span><span>更新：2026-10-12</span></div>
+    <div class="art-meta"><span class="by"><a href="../about.html" style="color:inherit">葉耀群 律師</a></span><span>合曜國際法律事務所</span><span>發布：2026-09-06</span><span>更新：2026-10-24</span></div>
   </div>
 </div>
 
@@ -233,16 +242,18 @@
     <ul>
       <li>背信罪＝「為他人處理事務」的人，違背任務、圖利自己或他人（或損害本人），致本人財產受損。</li>
       <li>刑法第 342 條：處 5 年以下有期徒刑；公司負責人常因掏空、利益輸送涉案。</li>
-      <li>上市櫃公司董監經理人另有「<strong>特別背信</strong>」（證交法第 171 條），刑度更重（3～10 年）。</li>
+      <li>公開發行公司的董事、監察人、經理人違背職務或侵占公司資產，致公司損害達 500 萬元者，另成立「<strong>特別背信</strong>」（證交法第 171 條），處 3～10 年有期徒刑。</li>
       <li>是否「違背任務」與有無不法意圖是攻防核心；單純商業判斷失誤未必成罪。</li>
     </ul>
   </div>
   <p class="lead">「我只是做生意判斷失誤，怎麼會變成背信？」這是許多公司負責人被偵辦時的第一個疑問。背信罪是金融與商業案件中最常見的罪名之一，界線卻常令人困惑。以下用白話說明背信罪的構成要件、與「特別背信」的差別，以及公司負責人常見的風險情境。</p>
 
   <h2>一、什麼是背信罪？</h2>
+  <p class="ans"><strong>依刑法第 342 條，為他人處理事務的人，意圖為自己或第三人不法利益或損害本人利益，而為違背任務的行為，致本人財產或其他利益受損，處 5 年以下有期徒刑、拘役或科或併科 50 萬元以下罰金。</strong></p>
   <p>依刑法第 342 條，背信罪是指：<strong>為他人處理事務的人，意圖為自己或第三人取得不法利益，或損害本人的利益，而做出違背任務的行為，並因此使本人的財產或利益受到損害。</strong>白話說，就是「受人之託、卻背叛所託」，把該為對方著想的事，拿來圖利自己或害了對方。</p>
 
-  <h2>二、背信罪的四個構成要件</h2>
+  <h2>二、背信罪要符合哪些要件？</h2>
+  <p class="ans"><strong>四個要件缺一不可：為他人處理事務、違背任務的行為、圖利自己或第三人或損害本人的意圖、致本人財產或利益受損；其中「是否違背任務」與「主觀意圖」是攻防核心。</strong></p>
   <ul>
     <li><strong>為他人處理事務</strong>：基於委任、僱傭等關係，替他人管理財產或事務（如公司負責人為公司處理業務）。</li>
     <li><strong>違背任務的行為</strong>：做了與其應盡職責相違背的事。</li>
@@ -252,12 +263,14 @@
   <p>四個要件缺一不可，尤其「是否違背任務」與「主觀意圖」，往往是案件攻防的核心。</p>
 
   <h2>三、「普通背信」與「特別背信」差在哪？</h2>
+  <p class="ans"><strong>普通背信（刑法第 342 條）處 5 年以下有期徒刑；公開發行公司的董事、監察人、經理人違背職務或侵占公司資產，致公司損害達 500 萬元，成立證券交易法第 171 條的特別背信，處 3 年以上 10 年以下有期徒刑。</strong></p>
   <ul>
     <li><strong>普通背信（刑法第 342 條）</strong>：處 5 年以下有期徒刑，得併科罰金。</li>
     <li><strong>特別背信（證券交易法第 171 條）</strong>：已依證交法發行有價證券公司的董事、監察人、經理人，違背職務或侵占公司資產，致公司遭受損害達新臺幣 500 萬元者，處 <strong>3 年以上 10 年以下</strong>有期徒刑，得併科重罰；未達 500 萬元者依刑法業務侵占、背信罪處罰；因犯罪獲取之財物或財產上利益達 1 億元以上者，處 7 年以上有期徒刑（詳見<a href="special-breach-irregular-transaction.html">特別背信與非常規交易差在哪？</a>）。此外，銀行法、金融控股公司法等對特定人員也設有加重背信規定。</li>
   </ul>
 
-  <h2>四、公司負責人常見的背信風險</h2>
+  <h2>四、公司負責人在哪些情況容易涉及背信？</h2>
+  <p class="ans"><strong>最常見三種：與關係人進行不合營業常規的交易（利益輸送）、以不合理的借貸、擔保或投資掏空資產，以及在利益衝突時選擇圖利自己。</strong></p>
   <ul>
     <li><strong>非常規交易、利益輸送</strong>：以明顯不合營業常規的條件與關係人交易，讓公司吃虧、他人得利。</li>
     <li><strong>掏空資產</strong>：以不合理的借貸、擔保、投資等手段將公司資產移轉出去。</li>
@@ -265,6 +278,7 @@
   </ul>
 
   <h2>五、涉及背信被調查時，該注意什麼？</h2>
+  <p class="ans"><strong>並非賠錢的決策都是背信：資訊充分、無利益衝突、為公司利益所做的商業判斷，與蓄意違背任務有本質差異，因此要保全決策依據與簽核紀錄，並儘早諮詢律師。</strong></p>
   <div class="callout"><p>並非每個賠錢的決策都是背信。若屬於合理範圍內的<strong>商業判斷</strong>（有充分資訊、無利益衝突、為公司利益而為），與蓄意違背任務、圖利自己有本質差異。因此，<strong>保全決策依據、董事會與簽核紀錄</strong>非常重要。</p></div>
   <p>一旦察覺可能被調查，建議儘早諮詢律師，釐清事實、盤點證據，並評估最適當的應對策略。</p>
 </article>
@@ -313,7 +327,7 @@
   </div>
 </section>
 
-<div class="back-home"><a href="../index.html">← 返回首頁</a></div>
+<div class="back-home"><a href="/">← 返回首頁</a></div>
 
 <footer>
   合曜國際法律事務所 HE SHINE ATTORNEYS-AT-LAW　·　葉耀群 律師　Yao-Chun Yeh<br />

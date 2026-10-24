@@ -34,15 +34,21 @@
   "description": "說明證券交易法財報不實的民、刑事責任、重大性判斷、責任主體與董事風險。",
   "image": "https://yyclaw.tw/assets/portrait.jpg",
   "datePublished": "2026-09-06",
-  "dateModified": "2026-10-07",
-  "author": { "@type": "Person", "@id": "https://yyclaw.tw/#person", "name": "葉耀群律師", "url": "https://yyclaw.tw/about.html" },
+  "dateModified": "2026-10-24",
+  "author": {
+    "@type": "Person",
+    "@id": "https://yyclaw.tw/#person",
+    "name": "葉耀群",
+    "url": "https://yyclaw.tw/about.html"
+  },
   "publisher": {
-    "@type": "LegalService",
-    "name": "合曜國際法律事務所",
-    "alternateName": "HE SHINE ATTORNEYS-AT-LAW"
+    "@id": "https://yyclaw.tw/#firm",
+    "name": "合曜國際法律事務所"
   },
   "mainEntityOfPage": "https://yyclaw.tw/articles/financial-statement-fraud.html",
-  "isPartOf": { "@id": "https://yyclaw.tw/#website" },
+  "isPartOf": {
+    "@id": "https://yyclaw.tw/#website"
+  },
   "articleSection": "證券交易法",
   "inLanguage": "zh-Hant"
 }
@@ -201,18 +207,21 @@
   .authorbox p{font-size:14.5px;line-height:1.85;color:#555;margin:0 0 8px}
   .authorbox a.ab-more{font-family:var(--serif);color:var(--rust);font-weight:600;font-size:14.5px;letter-spacing:.04em}
   @media(max-width:520px){.authorbox .ab{flex-direction:column;gap:14px}}
+  /* 先答後述答案句 */
+  .ans{background:#fff;border:1px solid var(--line);border-left:4px solid var(--navy);border-radius:4px;padding:16px 20px;margin:0 0 18px;font-size:16.5px;line-height:1.95;color:var(--ink)}
+  .cite{font-size:14px;color:var(--muted)}
 </style>
 </head>
 <body>
 
 <header class="nav">
   <div class="nav-inner">
-    <a href="../index.html" class="brand"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#B35C45" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M6 21h12"/><path d="M4 7h16"/><path d="M7 7l-3 6a3 3 0 0 0 6 0z"/><path d="M17 7l-3 6a3 3 0 0 0 6 0z"/></svg><span class="bt">葉耀群 律師</span></a>
+    <a href="/" class="brand"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#B35C45" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M6 21h12"/><path d="M4 7h16"/><path d="M7 7l-3 6a3 3 0 0 0 6 0z"/><path d="M17 7l-3 6a3 3 0 0 0 6 0z"/></svg><span class="bt">葉耀群 律師</span></a>
     <nav class="nav-links">
-      <a href="../index.html#about">關於葉律師</a>
-      <a href="../index.html#services">專業服務</a>
-      <a href="../index.html#articles">法律專欄</a>
-      <a href="../index.html#contact">聯絡我們</a>
+      <a href="/#about">關於葉律師</a>
+      <a href="/#services">專業服務</a>
+      <a href="/#articles">法律專欄</a>
+      <a href="/#contact">聯絡我們</a>
     </nav>
     <a class="nav-line" href="https://line.me/R/ti/p/%40665nqsat" target="_blank" rel="noopener" aria-label="LINE 線上諮詢"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg><span>LINE 線上諮詢</span></a>
   </div>
@@ -220,10 +229,10 @@
 
 <div class="art-hero">
   <div class="art-hero-in">
-    <div class="crumb"><a href="../index.html">首頁</a>　›　<a href="../securities-law.html">證券交易法律師</a>　›　財報不實有什麼刑事責任</div>
+    <div class="crumb"><a href="/">首頁</a>　›　<a href="../securities-law.html">證券交易法律師</a>　›　財報不實有什麼刑事責任</div>
     <div class="art-kicker">法 律 專 欄</div>
     <h1>財報不實有什麼刑事責任？<br />構成要件與董事風險一次看懂</h1>
-    <div class="art-meta"><span class="by"><a href="../about.html" style="color:inherit">葉耀群 律師</a></span><span>合曜國際法律事務所</span><span>發布：2026-09-06</span><span>更新：2026-10-07</span></div>
+    <div class="art-meta"><span class="by"><a href="../about.html" style="color:inherit">葉耀群 律師</a></span><span>合曜國際法律事務所</span><span>發布：2026-09-06</span><span>更新：2026-10-24</span></div>
   </div>
 </div>
 
@@ -240,19 +249,24 @@
   <p class="lead">上市櫃公司的財務報告，是投資人判斷公司價值的重要依據。一旦財報「灌水」或隱匿重要事實，不僅傷害投資人，也讓相關責任人面臨民、刑事責任。以下說明財報不實的責任類型、關鍵的「重大性」判斷，以及董事、經理人如何降低風險。</p>
 
   <h2>一、什麼是財報不實？</h2>
+  <p class="ans"><strong>指財務報告或財務業務文件有虛偽記載或隱匿重要事實，例如虛增營收、灌水存貨、隱藏重大負債或關係人交易。</strong></p>
   <p>財報不實，是指公司的財務報告或財務業務文件，有<strong>虛偽記載</strong>（把假的寫成真的）或<strong>隱匿</strong>（把該揭露的重要事實藏起來）的情形。常見如虛增營收、灌水存貨、隱藏重大負債或關係人交易等。</p>
 
-  <h2>二、財報不實的民事責任</h2>
+  <h2>二、財報不實要負哪些民事責任？</h2>
+  <p class="ans"><strong>依證券交易法第 20 條之 1，發行人及其負責人、曾在財報上簽名或蓋章的職員，以及有不正當行為或違反業務義務的簽證會計師，須對善意的取得人、出賣人或持有人負賠償責任；負責人與簽章職員須證明已盡相當注意，且有正當理由可合理確信內容無虛偽或隱匿，才能免責。</strong></p>
   <p>依證券交易法第 20 條之 1，財報不實時，<strong>發行人、發行人的負責人（董事、監察人、經理人）、以及在財報上簽章的會計師</strong>等，對善意取得或出售證券而受損害的投資人，可能須負賠償責任。</p>
   <p>值得注意的是，對於發行人的<strong>董事、經理人</strong>，法律採「<strong>過失推定</strong>」——除非能證明自己已盡相當注意且有正當理由相信財報無誤，否則就要負責。這也是為什麼董事「留痕」與盡職監督如此重要。</p>
 
-  <h2>三、財報不實的刑事責任</h2>
-  <p>依證券交易法第 171 條，財報不實（申報或公告的財務報告內容不實）屬重罪，處 <strong>3 年以上 10 年以下</strong>有期徒刑，得併科新臺幣 1,000 萬元以上 2 億元以下罰金；犯罪所得金額龐大者，刑度更重。</p>
+  <h2>三、財報不實的刑責有多重？</h2>
+  <p class="ans"><strong>依證券交易法第 171 條，處 3 年以上 10 年以下有期徒刑，得併科 1,000 萬元以上 2 億元以下罰金；因犯罪獲取之財物或財產上利益達 1 億元以上者，處 7 年以上有期徒刑。</strong></p>
+  <p>依證券交易法第 171 條，財報不實（申報或公告的財務報告內容不實）屬重罪，處 <strong>3 年以上 10 年以下</strong>有期徒刑，得併科新臺幣 1,000 萬元以上 2 億元以下罰金；因犯罪獲取之財物或財產上利益達 1 億元以上者，處 <strong>7 年以上</strong>有期徒刑，得併科 2,500 萬元以上 5 億元以下罰金。</p>
 
   <h2>四、關鍵爭點：「重大性」如何判斷？</h2>
+  <p class="ans"><strong>看這項不實或隱匿是否足以影響理性投資人的投資決定，實務上從事項性質（質）與金額比例（量）綜合判斷。</strong></p>
   <div class="callout"><p>不是任何小瑕疵都構成財報不實，關鍵在於<strong>「重大性」</strong>——這項不實或隱匿，是否足以影響一位理性投資人的投資決定。實務上會從「質」（事項性質）與「量」（金額比例）兩方面綜合判斷。重大性往往是案件成敗的核心戰場。</p></div>
 
   <h2>五、董事、經理人如何降低風險？</h2>
+  <p class="ans"><strong>落實內部控制、認真覆核並對異常數字提問、保存查核與討論紀錄，必要時取得會計師或律師的獨立意見。</strong></p>
   <ul>
     <li><strong>建立與落實內部控制</strong>：確保財務資訊產生流程可靠。</li>
     <li><strong>認真覆核、勇於提問</strong>：對財報中的異常數字要求說明，不簽「不懂的名字」。</li>
@@ -305,7 +319,7 @@
   </div>
 </section>
 
-<div class="back-home"><a href="../index.html">← 返回首頁</a></div>
+<div class="back-home"><a href="/">← 返回首頁</a></div>
 
 <footer>
   合曜國際法律事務所 HE SHINE ATTORNEYS-AT-LAW　·　葉耀群 律師　Yao-Chun Yeh<br />

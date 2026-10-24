@@ -37,11 +37,21 @@
   "description": "以證券交易法第157條之1為核心，白話說明內線交易的構成要件、內部人範圍、重大消息認定與刑責。",
   "image": "https://yyclaw.tw/assets/portrait.jpg",
   "datePublished": "2026-09-06",
-  "dateModified": "2026-10-07",
-  "author": { "@type": "Person", "@id": "https://yyclaw.tw/#person", "name": "葉耀群律師", "url": "https://yyclaw.tw/about.html" },
-  "publisher": { "@id": "https://yyclaw.tw/#firm", "name": "合曜國際法律事務所" },
+  "dateModified": "2026-10-24",
+  "author": {
+    "@type": "Person",
+    "@id": "https://yyclaw.tw/#person",
+    "name": "葉耀群",
+    "url": "https://yyclaw.tw/about.html"
+  },
+  "publisher": {
+    "@id": "https://yyclaw.tw/#firm",
+    "name": "合曜國際法律事務所"
+  },
   "mainEntityOfPage": "https://yyclaw.tw/articles/what-is-insider-trading.html",
-  "isPartOf": { "@id": "https://yyclaw.tw/#website" },
+  "isPartOf": {
+    "@id": "https://yyclaw.tw/#website"
+  },
   "articleSection": "證券交易法",
   "inLanguage": "zh-Hant"
 }
@@ -62,10 +72,10 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"公司內部人完全不能買自家股票嗎？","acceptedAnswer":{"@type":"Answer","text":"不是。內部人受限的是「在知悉尚未公開的重大消息期間」不得買賣；一般情形下，依規定申報後仍可買賣自家股票，也可透過預先訂立的交易計畫進行。關鍵在於是否『實際知悉未公開的重大消息』。"}},
-    {"@type":"Question","name":"我只是聽內部朋友講消息就去買，也算內線交易嗎？","acceptedAnswer":{"@type":"Answer","text":"可能算。依證券交易法第157條之1，從內部人處獲悉消息之人（俗稱消息受領人）也是規範對象，且不以第一手為限。若你明知或可得而知消息來自內部人且尚未公開，仍據以交易，就有觸法風險。"}},
+    {"@type":"Question","name":"公司內部人完全不能買自家股票嗎？","acceptedAnswer":{"@type":"Answer","text":"不是。內部人受限的是「在知悉尚未公開的重大消息期間」不得買賣；平時仍可買賣自家股票，但董事、監察人、經理人及持股超過10%的股東轉讓持股，須依證券交易法第22條之2規定的方式為之（例如事先向主管機關申報）。關鍵在於是否『實際知悉未公開的重大消息』。"}},
+    {"@type":"Question","name":"我只是聽內部朋友講消息就去買，也算內線交易嗎？","acceptedAnswer":{"@type":"Answer","text":"可能算。依證券交易法第157條之1，從內部人處獲悉消息之人（俗稱消息受領人）也是規範對象，且不以第一手為限。若你知道消息來自內部人且尚未公開，仍據以交易，就有觸法風險。"}},
     {"@type":"Question","name":"消息已經被媒體報導了，還算「未公開」嗎？","acceptedAnswer":{"@type":"Answer","text":"不一定。法律對『公開』有特定方式（例如輸入公開資訊觀測站）與等待時間的要求。未經公司或相關人士證實的媒體傳聞，實務上不當然等於已『公開』，仍可能被認定為內線交易。"}},
-    {"@type":"Question","name":"內線交易的刑責有多重？","acceptedAnswer":{"@type":"Answer","text":"依證券交易法第171條，違反內線交易規定者，處3年以上10年以下有期徒刑，得併科新臺幣1,000萬元以上2億元以下罰金；犯罪所得金額達1億元以上者，刑度更重。此外還有民事損害賠償責任。"}},
+    {"@type":"Question","name":"內線交易的刑責有多重？","acceptedAnswer":{"@type":"Answer","text":"依證券交易法第171條，違反內線交易規定者，處3年以上10年以下有期徒刑，得併科新臺幣1,000萬元以上2億元以下罰金；因犯罪獲取之財物或財產上利益達1億元以上者，處7年以上有期徒刑，得併科2,500萬元以上5億元以下罰金。此外還有民事損害賠償責任。"}},
     {"@type":"Question","name":"如果最後沒賺錢甚至賠錢，也會被追訴嗎？","acceptedAnswer":{"@type":"Answer","text":"會。內線交易的成立不以實際獲利為必要，重點在於是否有『知悉未公開重大消息而買賣』的行為；有無獲利、金額多寡，主要影響量刑與賠償金額的計算。"}}
   ]
 }
@@ -181,21 +191,24 @@
   .authorbox p{font-size:14.5px;line-height:1.85;color:#555;margin:0 0 8px}
   .authorbox a.ab-more{font-family:var(--serif);color:var(--rust);font-weight:600;font-size:14.5px;letter-spacing:.04em}
   @media(max-width:520px){.authorbox .ab{flex-direction:column;gap:14px}}
+  /* 先答後述答案句 */
+  .ans{background:#fff;border:1px solid var(--line);border-left:4px solid var(--navy);border-radius:4px;padding:16px 20px;margin:0 0 18px;font-size:16.5px;line-height:1.95;color:var(--ink)}
+  .cite{font-size:14px;color:var(--muted)}
 </style>
 </head>
 <body>
 
 <header class="nav">
   <div class="nav-inner">
-    <a href="../index.html" class="brand">
+    <a href="/" class="brand">
       <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#B35C45" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M6 21h12"/><path d="M4 7h16"/><path d="M7 7l-3 6a3 3 0 0 0 6 0z"/><path d="M17 7l-3 6a3 3 0 0 0 6 0z"/><circle cx="12" cy="4" r="1.4"/></svg>
       <span class="bt">葉耀群 律師</span>
     </a>
     <nav class="nav-links">
-      <a href="../index.html#about">關於葉律師</a>
-      <a href="../index.html#services">專業服務</a>
-      <a href="../index.html#articles">法律專欄</a>
-      <a href="../index.html#contact">聯絡我們</a>
+      <a href="/#about">關於葉律師</a>
+      <a href="/#services">專業服務</a>
+      <a href="/#articles">法律專欄</a>
+      <a href="/#contact">聯絡我們</a>
     </nav>
     <a class="nav-line" href="https://line.me/R/ti/p/%40665nqsat" target="_blank" rel="noopener" aria-label="LINE 線上諮詢"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg><span>LINE 線上諮詢</span></a>
   </div>
@@ -203,10 +216,10 @@
 
 <div class="art-hero">
   <div class="art-hero-in">
-    <div class="crumb"><a href="../index.html">首頁</a>　›　<a href="../securities-law.html">證券交易法律師</a>　›　什麼是內線交易</div>
+    <div class="crumb"><a href="/">首頁</a>　›　<a href="../securities-law.html">證券交易法律師</a>　›　什麼是內線交易</div>
     <div class="art-kicker">法 律 專 欄</div>
     <h1>什麼是內線交易？<br />構成要件、刑責與常見迷思一次看懂</h1>
-    <div class="art-meta"><span class="by"><a href="../about.html" style="color:inherit">葉耀群 律師</a></span><span>合曜國際法律事務所</span><span>發布：2026-09-06</span><span>更新：2026-10-07</span></div>
+    <div class="art-meta"><span class="by"><a href="../about.html" style="color:inherit">葉耀群 律師</a></span><span>合曜國際法律事務所</span><span>發布：2026-09-06</span><span>更新：2026-10-24</span></div>
   </div>
 </div>
 
@@ -223,10 +236,12 @@
   <p class="lead">「知道消息就先買，有什麼問題？」——這是很多人對股市的直覺，卻可能踩到內線交易的法律紅線。內線交易是金融犯罪中最受矚目、也最容易在不知不覺間觸犯的類型之一。以下以我偵辦金融案件的經驗，用白話帶你看懂：什麼是內線交易、要件有哪些、誰會被規範，以及觸法的後果。</p>
 
   <h2>一、內線交易到底是什麼？</h2>
+  <p class="ans"><strong>內線交易是指內部人等特定身分者，實際知悉會重大影響股價、但尚未公開的消息後，在消息明確後、公開前或公開後 18 小時內買賣該公司股票，規定在證券交易法第 157 條之 1。</strong></p>
   <p>簡單說，內線交易就是：<strong>具有特定身分的人，在知道某項「還沒公開、卻會影響股價的重大消息」時，搶在消息公開前買賣該公司股票</strong>。</p>
   <p>法律為什麼要禁止？因為證券市場靠的是「公平」與「投資人的信心」。如果少數人可以憑內線消息穩賺不賠，等於在一場資訊不對等的牌局裡「看牌出老千」，一般投資人自然不願再進場。我國《證券交易法》第 157 條之 1，正是為了維護市場的公平與健全而設。</p>
 
-  <h2>二、內線交易的四大構成要件</h2>
+  <h2>二、內線交易要符合哪些要件？</h2>
+  <p class="ans"><strong>須同時具備四項：屬於法定的內部人、實際知悉消息、消息重大且已明確、在消息明確後至公開後 18 小時內買賣。成立不以實際獲利為必要。</strong></p>
   <p>依證券交易法第 157 條之 1，成立內線交易，通常要同時具備以下要素：</p>
   <ol>
     <li><strong>行為主體是「內部人」</strong>：具有法律所列特定身分的人（詳見下一段）。</li>
@@ -237,6 +252,7 @@
   <div class="callout"><p>特別提醒：內線交易的成立<strong>不以「實際獲利」為必要</strong>。就算最後沒賺、甚至賠錢，只要具備上述要件，仍可能構成犯罪；有無獲利主要影響量刑與賠償金額。</p></div>
 
   <h2>三、誰算「內部人」？範圍比你想的更廣</h2>
+  <p class="ans"><strong>包括公司的董事、監察人、經理人，持股超過 10% 的股東，基於職業或控制關係獲悉消息的人，喪失上述身分未滿 6 個月的人，以及從上述之人獲悉消息的人（消息受領人）。</strong></p>
   <p>很多人以為只有董事長、總經理才會被抓，其實法律規範的「內部人」有六大類：</p>
   <table class="art-table">
     <tr><th>類型</th><th>說明</th></tr>
@@ -250,6 +266,7 @@
   <p>換句話說，<strong>就算你不是公司的人，只要從內部人那裡聽到消息、又據以買賣，一樣可能被追訴</strong>。這是最多人忽略、卻最常中招的地方。</p>
 
   <h2>四、什麼樣的消息才算「重大消息」？</h2>
+  <p class="ans"><strong>指涉及公司財務、業務，或該證券的市場供求、公開收購，其具體內容對股價有重大影響，或對正當投資人的投資決定有重要影響的消息（證券交易法第 157 條之 1 第 5 項）。</strong></p>
   <p>依主管機關訂定的「重大消息範圍辦法」，重大消息大致分兩類：</p>
   <ul>
     <li><strong>涉及公司財務、業務的消息</strong>：如重大投資、併購、減資、重整、財報錯誤重編、重大虧損、經營層重大變動等（多為公司所能掌控）。</li>
@@ -258,10 +275,11 @@
   <h3>「重大」怎麼判斷？</h3>
   <p>核心標準是：這項消息若被一般理性投資人知道，是否「很可能」影響他的投資決定。對於「或許會、或許不會發生」的事件（例如還在磋商中的併購），實務上參考美國法採「<strong>可能性 × 影響程度</strong>」綜合判斷——即使發生機率不高，只要一旦成真影響巨大（如併購），仍可能被認定為重大消息。此外，消息也有「成立時點」的問題，常以事實發生日、協議日、簽約日等在前者為準。</p>
 
-  <h2>五、觸犯內線交易的後果</h2>
+  <h2>五、觸犯內線交易有什麼後果？</h2>
+  <p class="ans"><strong>刑事上處 3 年以上 10 年以下有期徒刑，因犯罪獲取之財物或財產上利益達 1 億元以上者，處 7 年以上有期徒刑；民事上須賠償善意的相反買賣人，情節重大者，法院得將賠償額提高至 3 倍。</strong></p>
   <p>內線交易是重罪，責任包含刑事與民事兩部分：</p>
   <ul>
-    <li><strong>刑事責任</strong>：依證券交易法第 171 條，處 <strong>3 年以上 10 年以下有期徒刑</strong>，得併科新臺幣 1,000 萬元以上 2 億元以下罰金；若犯罪所得金額達 1 億元以上，刑度更重。</li>
+    <li><strong>刑事責任</strong>：依證券交易法第 171 條，處 <strong>3 年以上 10 年以下有期徒刑</strong>，得併科新臺幣 1,000 萬元以上 2 億元以下罰金；因犯罪獲取之財物或財產上利益達 1 億元以上者，處 <strong>7 年以上有期徒刑</strong>，得併科 2,500 萬元以上 5 億元以下罰金。</li>
     <li><strong>民事賠償</strong>：須對善意的相對買賣人負損害賠償責任，情節重大者，法院得將賠償額提高至 3 倍。</li>
   </ul>
   <div class="callout"><p>金融案件的偵辦往往涉及龐雜的交易紀錄、通聯與金流比對。一旦收到通知或察覺可能被調查，<strong>越早諮詢專業律師、及早釐清身分與風險，越能爭取有利空間。</strong></p></div>
@@ -292,10 +310,10 @@
 
 <section class="faq">
   <h2>常見問題</h2>
-  <details class="qa"><summary>公司內部人完全不能買自家股票嗎？</summary><div class="a">不是。內部人受限的是「在知悉尚未公開的重大消息期間」不得買賣；一般情形下，依規定申報後仍可買賣自家股票，也可透過預先訂立的交易計畫進行。關鍵在於是否實際知悉未公開的重大消息。</div></details>
-  <details class="qa"><summary>我只是聽內部朋友講消息就去買，也算內線交易嗎？</summary><div class="a">可能算。依證券交易法第 157 條之 1，從內部人處獲悉消息之人（俗稱消息受領人）也是規範對象，且不以第一手為限。若你明知或可得而知消息來自內部人且尚未公開，仍據以交易，就有觸法風險。</div></details>
+  <details class="qa"><summary>公司內部人完全不能買自家股票嗎？</summary><div class="a">不是。內部人受限的是「在知悉尚未公開的重大消息期間」不得買賣；平時仍可買賣自家股票，但董事、監察人、經理人及持股超過 10% 的股東轉讓持股，須依證券交易法第 22 條之 2 規定的方式為之（例如事先向主管機關申報）。關鍵在於是否實際知悉未公開的重大消息。</div></details>
+  <details class="qa"><summary>我只是聽內部朋友講消息就去買，也算內線交易嗎？</summary><div class="a">可能算。依證券交易法第 157 條之 1，從內部人處獲悉消息之人（俗稱消息受領人）也是規範對象，且不以第一手為限。若你知道消息來自內部人且尚未公開，仍據以交易，就有觸法風險。</div></details>
   <details class="qa"><summary>消息已經被媒體報導了，還算「未公開」嗎？</summary><div class="a">不一定。法律對「公開」有特定方式（例如輸入公開資訊觀測站）與等待時間的要求。未經公司或相關人士證實的媒體傳聞，實務上不當然等於已「公開」，仍可能被認定為內線交易。</div></details>
-  <details class="qa"><summary>內線交易的刑責有多重？</summary><div class="a">依證券交易法第 171 條，違反內線交易規定者，處 3 年以上 10 年以下有期徒刑，得併科新臺幣 1,000 萬元以上 2 億元以下罰金；犯罪所得金額達 1 億元以上者，刑度更重。此外還有民事損害賠償責任。</div></details>
+  <details class="qa"><summary>內線交易的刑責有多重？</summary><div class="a">依證券交易法第 171 條，違反內線交易規定者，處 3 年以上 10 年以下有期徒刑，得併科新臺幣 1,000 萬元以上 2 億元以下罰金；因犯罪獲取之財物或財產上利益達 1 億元以上者，處 7 年以上有期徒刑，得併科 2,500 萬元以上 5 億元以下罰金。此外還有民事損害賠償責任。</div></details>
   <details class="qa"><summary>如果最後沒賺錢甚至賠錢，也會被追訴嗎？</summary><div class="a">會。內線交易的成立不以實際獲利為必要，重點在於是否有「知悉未公開重大消息而買賣」的行為；有無獲利、金額多寡，主要影響量刑與賠償金額的計算。</div></details>
 </section>
 
@@ -314,7 +332,7 @@
   </div>
 </section>
 
-<div class="back-home"><a href="../index.html">← 返回首頁</a></div>
+<div class="back-home"><a href="/">← 返回首頁</a></div>
 
 <footer>
   合曜國際法律事務所 HE SHINE ATTORNEYS-AT-LAW　·　葉耀群 律師　Yao-Chun Yeh<br />

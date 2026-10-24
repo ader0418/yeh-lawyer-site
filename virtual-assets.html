@@ -31,23 +31,63 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebPage",
+      "@id": "https://yyclaw.tw/virtual-assets.html#webpage",
+      "url": "https://yyclaw.tw/virtual-assets.html",
+      "name": "虛擬資產／VASP 法律顧問｜數位金融與虛擬貨幣法律風險｜葉耀群律師",
+      "inLanguage": "zh-Hant",
+      "isPartOf": {
+        "@id": "https://yyclaw.tw/#website"
+      },
+      "about": {
+        "@id": "https://yyclaw.tw/virtual-assets.html#service"
+      },
+      "author": {
+        "@id": "https://yyclaw.tw/#person"
+      },
+      "datePublished": "2026-10-04",
+      "dateModified": "2026-10-24"
+    },
+    {
       "@type": "LegalService",
       "@id": "https://yyclaw.tw/virtual-assets.html#service",
       "name": "虛擬資產與 VASP 法律服務",
       "serviceType": "虛擬資產法律定性、VASP 合規與數位金融刑事風險評估",
       "url": "https://yyclaw.tw/virtual-assets.html",
-      "provider": { "@id": "https://yyclaw.tw/#firm" },
+      "provider": {
+        "@id": "https://yyclaw.tw/#firm"
+      },
       "areaServed": "TW",
-      "audience": { "@type": "Audience", "audienceType": "虛擬資產服務業者（VASP）、數位金融業者、交易平台、投資人" },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "虛擬資產服務業者（VASP）、數位金融業者、交易平台、投資人"
+      },
       "description": "提供虛擬資產與虛擬貨幣之法律定性、VASP 業者監理與洗錢防制法遵、穩定幣與 RWA、虛擬資產衍生性商品之法律界限，以及虛擬資產相關刑事風險評估。由專研數位金融法制、前士林地檢署主任檢察官葉耀群律師主持。",
-      "about": { "@id": "https://yyclaw.tw/#person" }
+      "about": {
+        "@id": "https://yyclaw.tw/#person"
+      }
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://yyclaw.tw/" },
-        { "@type": "ListItem", "position": 2, "name": "專業領域", "item": "https://yyclaw.tw/#services" },
-        { "@type": "ListItem", "position": 3, "name": "虛擬資產／VASP 法律顧問", "item": "https://yyclaw.tw/virtual-assets.html" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首頁",
+          "item": "https://yyclaw.tw/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "專業領域",
+          "item": "https://yyclaw.tw/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "虛擬資產／VASP 法律顧問",
+          "item": "https://yyclaw.tw/virtual-assets.html"
+        }
       ]
     }
   ]
@@ -95,6 +135,7 @@
   .phero .lead{color:#c9d3e2;font-size:16.5px;margin-top:18px;line-height:1.95;max-width:62ch}
   .phero .tags{margin-top:24px;display:flex;flex-wrap:wrap;gap:9px}
   .phero .tags span{font-family:var(--sans);font-size:12.5px;color:#d7dfea;border:1px solid rgba(255,255,255,.28);border-radius:20px;padding:5px 13px;letter-spacing:.03em}
+  .phero .pupd{margin-top:18px;font-family:var(--sans);font-size:12.5px;color:#9fb0c8;letter-spacing:.04em}
 
   .wrap{max-width:880px;margin:0 auto;padding:0 26px}
   .block{padding:52px 0}
@@ -162,15 +203,15 @@
 
 <header class="nav">
   <div class="nav-inner">
-    <a href="index.html" class="brand">
+    <a href="/" class="brand">
       <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#B35C45" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M6 21h12"/><path d="M4 7h16"/><path d="M7 7l-3 6a3 3 0 0 0 6 0z"/><path d="M17 7l-3 6a3 3 0 0 0 6 0z"/></svg>
       <span class="bt">葉耀群 律師</span>
     </a>
     <nav class="nav-links">
-      <a href="index.html#services">專業服務</a>
-      <a href="index.html#articles">法律專欄</a>
+      <a href="/#services">專業服務</a>
+      <a href="/#articles">法律專欄</a>
       <a href="about.html">關於葉律師</a>
-      <a href="index.html#contact">聯絡我們</a>
+      <a href="/#contact">聯絡我們</a>
     </nav>
     <a class="nav-line" href="https://line.me/R/ti/p/%40665nqsat" target="_blank" rel="noopener" aria-label="LINE 線上諮詢"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg><span>LINE 線上諮詢</span></a>
   </div>
@@ -178,13 +219,14 @@
 
 <section class="phero">
   <div class="inner">
-    <div class="crumb"><a href="index.html">首頁</a><span>›</span><a href="index.html#services">專業領域</a><span>›</span>虛擬資產／VASP 法律顧問</div>
+    <div class="crumb"><a href="/">首頁</a><span>›</span><a href="/#services">專業領域</a><span>›</span>虛擬資產／VASP 法律顧問</div>
     <div class="kick">VIRTUAL ASSETS &amp; VASP</div>
     <h1>虛擬資產與 VASP 法律顧問</h1>
     <p class="lead">虛擬資產、穩定幣、RWA 與虛擬資產衍生性商品，正快速重塑金融樣貌；隨著《虛擬資產服務法》制定公布，監理也將由登記制走向許可制。新型態商品的法律定性，直接決定了適用的規範與刑事風險。專研數位金融法制、前士林地檢署主任檢察官葉耀群律師，提供 VASP 合規、虛擬資產法律定性與刑事風險評估。</p>
     <div class="tags">
       <span>虛擬資產</span><span>VASP 監理</span><span>穩定幣</span><span>RWA</span><span>永續合約</span><span>洗錢防制</span><span>虛擬資產刑事風險</span>
     </div>
+    <div class="pupd">作者：葉耀群律師　｜　最後更新：2026-10-24</div>
   </div>
 </section>
 
@@ -260,7 +302,7 @@
       <p>無論您是 VASP 業者、數位金融新創，或因虛擬資產交易面臨刑事風險，建議及早進行法律定性與合規、風險評估。</p>
       <div class="cta-btns">
         <a class="btn-line" href="https://line.me/R/ti/p/%40665nqsat" target="_blank" rel="noopener">LINE 線上諮詢</a>
-        <a class="btn-form" href="index.html#contact">填寫諮詢表單</a>
+        <a class="btn-form" href="/#contact">填寫諮詢表單</a>
       </div>
     </div>
     <div class="disc">本頁內容為葉耀群律師提供之一般法律資訊，非針對個案之正式法律意見，亦不因閱讀本頁或與本所聯繫而成立委任關係；虛擬資產相關法規變動快速，實際案件仍應依個案具體事實與最新法令、主管機關規範判斷。</div>
@@ -270,7 +312,7 @@
 
 <footer>
   合曜國際法律事務所 HE SHINE ATTORNEYS-AT-LAW　·　葉耀群 律師　Yao-Chun Yeh<br />
-  <a href="index.html">← 返回首頁</a>　·　<a href="https://heshine.tw/linkes7ftpn6/copy-of" target="_blank" rel="noopener">合曜國際法律事務所簡介</a>
+  <a href="/">← 返回首頁</a>　·　<a href="https://heshine.tw/linkes7ftpn6/copy-of" target="_blank" rel="noopener">合曜國際法律事務所簡介</a>
 </footer>
 
 </body>

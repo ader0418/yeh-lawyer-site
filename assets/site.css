@@ -1,0 +1,43 @@
+/* 全站共用：諮詢入口（文章頁與領域頁 CTA、頁尾、手機快速聯絡列） */
+
+/* 文章頁 CTA：LINE、電話並列，下方為表單連結與事務所地址 */
+.cta-acts{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cta-acts .line-btn,.cta-acts .tel-btn{width:min(260px,100%);justify-content:center}
+.tel-btn{display:inline-flex;align-items:center;gap:12px;color:#fff;border:1.5px solid rgba(255,255,255,.55);border-radius:14px;padding:13px 28px;transition:background .2s,border-color .2s}
+.tel-btn:hover{background:rgba(255,255,255,.08);border-color:#fff;text-decoration:none}
+.tel-btn .lt{display:flex;flex-direction:column;line-height:1.25;text-align:left}
+.tel-btn .lt b{font-family:var(--serif);font-size:19px;font-weight:700;letter-spacing:.06em}
+.tel-btn .lt small{font-family:var(--sans);font-size:12.5px;color:rgba(255,255,255,.85)}
+.cta-form{display:inline-block;margin-top:20px;font-family:var(--serif);font-size:15.5px;font-weight:600;letter-spacing:.04em;color:#f0c9bc}
+.cta-form:hover{color:#fff}
+.cta-addr{margin-top:12px;font-family:var(--sans);font-size:13px;color:#9fb0c8;letter-spacing:.03em;line-height:1.8}
+@media(max-width:480px){
+  .cta-in{padding:32px 18px}
+  .cta-in h3{font-size:21px}
+  .cta-acts .line-btn,.cta-acts .tel-btn{padding:12px 16px;gap:10px}
+  .cta-acts .lt b{font-size:17px;letter-spacing:.04em}
+}
+
+/* 領域頁與作者頁 CTA 的電話按鈕 */
+.btn-tel{display:inline-block;border:1.5px solid rgba(255,255,255,.55);color:#fff;border-radius:999px;padding:12px 26px;font-family:var(--serif);font-weight:600;letter-spacing:.06em}
+.btn-tel:hover{background:rgba(255,255,255,.08);border-color:#fff;text-decoration:none}
+
+/* 首頁主視覺的電話 */
+.hero-tel{flex-basis:100%;font-family:var(--serif);font-size:15px;color:var(--muted);letter-spacing:.04em}
+.hero-tel a{color:var(--navy);font-weight:700;letter-spacing:.06em}
+
+/* 頁尾聯絡資訊 */
+footer .fcontact{color:#9fb0c8}
+footer .fcontact a{color:#c9d3e2}
+
+/* 手機底部快速聯絡列 */
+.mbar{display:none}
+@media(max-width:680px){
+  .mbar{display:flex;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:300;background:#fff;border-top:1px solid var(--line);box-shadow:0 -6px 18px -10px rgba(5,27,57,.35);padding:8px 10px calc(8px + env(safe-area-inset-bottom))}
+  .mbar a{flex:1;display:flex;align-items:center;justify-content:center;border-radius:10px;padding:11px 4px;font-family:var(--serif);font-size:15px;font-weight:600;letter-spacing:.04em;white-space:nowrap}
+  .mbar a:hover{text-decoration:none}
+  .mbar .mb-line{background:var(--rust);color:#fff}
+  .mbar .mb-tel{background:var(--navy);color:#fff}
+  .mbar .mb-form{background:var(--gray-2);color:var(--navy);border:1px solid var(--line)}
+  body{padding-bottom:calc(68px + env(safe-area-inset-bottom))}
+}

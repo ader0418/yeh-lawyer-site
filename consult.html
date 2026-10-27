@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>線上法律諮詢表單｜葉耀群律師</title>
-<meta name="description" content="填寫線上法律諮詢表單，葉耀群律師（合曜國際法律事務所）將盡快與您聯繫。以金融犯罪與貪瀆案件為專長，並辦理證券交易法、洗錢防制、公司治理等案件。" />
+<meta name="description" content="填寫線上法律諮詢表單，葉耀群律師（合曜國際法律事務所）將盡快與您聯繫。主要執業領域為金融犯罪與貪瀆案件，並辦理證券交易法、洗錢防制、公司治理等案件。" />
 <meta name="robots" content="index, follow" />
 <meta name="theme-color" content="#051B39" />
 <link rel="canonical" href="https://yyclaw.tw/consult.html" />
@@ -60,6 +60,13 @@
   .agree input{margin-top:4px;flex:0 0 auto;width:17px;height:17px;accent-color:var(--rust)}
   .agree label{font-family:var(--sans);font-weight:400;font-size:13.5px;color:var(--ink);line-height:1.75;margin:0}
 
+  .more{border:1px solid var(--line);border-radius:10px;margin:4px 0 22px;background:#fbfaf8}
+  .more summary{cursor:pointer;list-style:none;padding:14px 18px;font-family:var(--serif);color:var(--navy);font-size:15px;font-weight:600}
+  .more summary::-webkit-details-marker{display:none}
+  .more summary::before{content:"＋";color:var(--rust);margin-right:8px}
+  .more[open] summary::before{content:"－"}
+  .more-in{padding:4px 18px 10px}
+  .consent{font-size:13px;color:var(--muted);line-height:1.8;margin:0 0 18px}
   .submit{width:100%;background:var(--navy);color:#fff;border:none;border-radius:10px;padding:16px;font-family:var(--serif);font-size:18px;font-weight:600;letter-spacing:.1em;cursor:pointer;transition:background .2s,transform .2s}
   .submit:hover{background:var(--rust)}
   .submit:disabled{opacity:.6;cursor:not-allowed}
@@ -90,10 +97,12 @@
   @media(max-width:680px){.nav-line{padding:8px 14px;font-size:13.5px}}
   @media(max-width:420px){.nav-line span{display:none}.nav-line{padding:9px 11px}}
 </style>
+<link rel="stylesheet" href="/assets/site.css" />
+<script src="/assets/track.js" defer></script>
 </head>
 <body>
 
-<header class="nav">
+<header class="nav" data-loc="nav">
   <div class="nav-inner">
     <a href="/" class="brand">
       <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#B35C45" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M6 21h12"/><path d="M4 7h16"/><path d="M7 7l-3 6a3 3 0 0 0 6 0z"/><path d="M17 7l-3 6a3 3 0 0 0 6 0z"/></svg>
@@ -111,13 +120,13 @@
 <section class="hero">
   <div class="kick">ONLINE CONSULTATION</div>
   <h1>線上法律諮詢</h1>
-  <p>請填寫以下資訊，葉耀群律師將盡快與您聯繫。欄位越完整，越能協助我們快速掌握案情。</p>
+  <p>只需填寫姓名、聯絡方式與問題簡述，葉耀群律師將盡快與您聯繫。急迫案件請直接撥打 <a href="tel:+886227003220" style="color:#fff;font-weight:600">02-2700-3220</a>。</p>
 </section>
 
 <div class="wrap">
   <div class="card">
     <div id="formArea">
-      <div class="note">＊本表單僅供初步諮詢聯繫之用，<strong>填寫本表單並不成立委任關係</strong>，亦不構成正式法律意見。所填資料僅用於與您聯繫及案件初步評估。緊急事件（如明日開庭、今日約談）請直接來電或 LINE。</div>
+      <div class="note">＊本表單僅供初步諮詢聯繫之用，<strong>填寫本表單並不成立委任關係</strong>，亦不構成正式法律意見。所填資料僅用於與您聯繫及案件初步評估。緊急事件（如明日開庭、今日約談）請直接撥打 <a href="tel:+886227003220" style="font-weight:600">02-2700-3220</a> 或 LINE。</div>
 
       <form id="consultForm">
         <input type="hidden" name="access_key" value="77126211-4184-42d5-9f85-f5551424facd" />
@@ -127,84 +136,86 @@
 
         <div class="row2">
           <div class="field">
-            <label>姓名／稱呼<span class="req">*</span></label>
-            <input type="text" name="姓名" required placeholder="如：王先生／陳小姐" />
+            <label for="fName">姓名／稱呼<span class="req">*</span></label>
+            <input type="text" id="fName" name="Name" required autocomplete="name" placeholder="如：王先生／陳小姐" />
           </div>
           <div class="field">
-            <label>聯絡電話<span class="req">*</span></label>
-            <input type="tel" name="聯絡電話" required placeholder="0912-345-678" />
+            <label for="fContact">電話或 LINE ID<span class="req">*</span></label>
+            <input type="text" id="fContact" name="Phone or LINE" required autocomplete="tel" placeholder="0912-345-678 或 LINE ID" />
           </div>
         </div>
 
         <div class="field">
-          <label>電子郵件<span class="req">*</span></label>
-          <input type="email" name="email" required placeholder="your@email.com" />
-          <div class="hint">我們將以此信箱與您聯繫並寄送確認。</div>
-        </div>
-
-        <div class="row2">
-          <div class="field">
-            <label>案件型態<span class="req">*</span></label>
-            <select name="案件型態" id="caseKind" required>
-              <option value="" disabled selected>請選擇</option>
-              <option>民事</option>
-              <option>刑事</option>
-            </select>
-          </div>
-          <div class="field">
-            <label>案件類型<span class="req">*</span></label>
-            <select name="案件類型" id="caseType" required disabled>
-              <option value="" disabled selected>請先選擇案件型態</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="field">
-          <label>您目前的身分<span class="req">*</span></label>
-          <select name="目前身分" required>
-            <option value="" disabled selected>請選擇</option>
-            <option>被告／犯罪嫌疑人</option>
-            <option>證人</option>
-            <option>告訴人／被害人／原告</option>
-            <option>被告（民事）</option>
-            <option>公司負責人／董事、監察人</option>
-            <option>股東</option>
-            <option>關係人／尚不確定</option>
-            <option>其他</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label>是否有急迫期限？（如開庭、約談、聲請期限的日期）</label>
-          <input type="text" name="急迫期限" placeholder="如：2026/10/15 上午 10 時 地檢署約談；若無可留空" />
-        </div>
-
-        <div class="field">
-          <label>事實經過與想諮詢的問題<span class="req">*</span></label>
-          <textarea name="事實經過與諮詢問題" required placeholder="請簡述：發生了什麼事、目前進度（是否已收到傳票/搜索/起訴）、涉及金額、以及您最想問的問題。"></textarea>
+          <label for="fMsg">問題簡述<span class="req">*</span></label>
+          <textarea id="fMsg" name="Message" required placeholder="簡單說明發生了什麼事、目前進度（是否已收到傳票／搜索／起訴），以及您最想問的問題。"></textarea>
           <div class="hint">請勿填寫身分證字號、帳號密碼等高度敏感個資。</div>
         </div>
 
-        <div class="field">
-          <label>是否已委任其他律師？</label>
-          <select name="是否已委任其他律師">
-            <option value="" disabled selected>請選擇</option>
-            <option>尚未委任</option>
-            <option>已委任，想尋求其他意見</option>
-          </select>
-        </div>
+        <details class="more">
+          <summary>補充資訊（選填）：填得越完整，越能協助律師事先掌握案情</summary>
+          <div class="more-in">
+            <div class="field">
+              <label for="fEmail">電子郵件</label>
+              <input type="email" id="fEmail" name="email" autocomplete="email" placeholder="your@email.com" />
+              <div class="hint">留下 Email，我們也可以用書面方式回覆您。</div>
+            </div>
 
-        <div class="agree">
-          <input type="checkbox" id="agree" required />
-          <label for="agree">我已了解，填寫本表單<strong>不成立委任關係</strong>、不構成正式法律意見，並同意事務所以我提供的聯絡方式與我聯繫。</label>
-        </div>
+            <div class="row2">
+              <div class="field">
+                <label for="caseKind">案件型態</label>
+                <select name="Case Category" id="caseKind">
+                  <option value="">請選擇</option>
+                  <option>民事</option>
+                  <option>刑事</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="caseType">案件類型</label>
+                <select name="Case Type" id="caseType" disabled>
+                  <option value="">請先選擇案件型態</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="fRole">您目前的身分</label>
+              <select id="fRole" name="Role">
+                <option value="">請選擇</option>
+                <option>被告／犯罪嫌疑人</option>
+                <option>證人</option>
+                <option>告訴人／被害人／原告</option>
+                <option>被告（民事）</option>
+                <option>公司負責人／董事、監察人</option>
+                <option>股東</option>
+                <option>關係人／尚不確定</option>
+                <option>其他</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="fDeadline">是否有急迫期限？（如開庭、約談、聲請期限的日期）</label>
+              <input type="text" id="fDeadline" name="Deadline" placeholder="如：2026/11/15 上午 10 時 地檢署約談；若無可留空" />
+            </div>
+
+            <div class="field" style="margin-bottom:6px">
+              <label for="fOther">是否已委任其他律師？</label>
+              <select id="fOther" name="Other Lawyer">
+                <option value="">請選擇</option>
+                <option>尚未委任</option>
+                <option>已委任，想尋求其他意見</option>
+              </select>
+            </div>
+          </div>
+        </details>
+
+        <p class="consent">送出即表示您了解：填寫本表單<strong>不成立委任關係</strong>，亦不構成正式法律意見；所填資料僅用於與您聯繫及案件初步評估。</p>
 
         <button type="submit" class="submit" id="submitBtn">送出諮詢</button>
         <div class="err" id="errBox"></div>
       </form>
 
-      <div class="alt">
-        想更快聯繫？　<a class="line-inline" href="https://line.me/R/ti/p/%40665nqsat" target="_blank" rel="noopener">LINE 線上諮詢 · @665nqsat</a>
+      <div class="alt" data-loc="consult_alt">
+        想更快聯繫？　<a href="tel:+886227003220" style="font-weight:600">02-2700-3220</a>　或　<a class="line-inline" href="https://line.me/R/ti/p/%40665nqsat" target="_blank" rel="noopener">LINE 線上諮詢 · @665nqsat</a>
       </div>
     </div>
 
@@ -216,9 +227,10 @@
   </div>
 </div>
 
-<footer>
+<footer data-loc="footer">
   合曜國際法律事務所 HE SHINE ATTORNEYS-AT-LAW　·　葉耀群 律師　Yao-Chun Yeh<br />
-  <a href="/">← 返回首頁</a>　·　<a href="https://heshine.tw/linkes7ftpn6/copy-of" target="_blank" rel="noopener">合曜國際法律事務所簡介</a>
+  <span class="fcontact">106 臺北市大安區仁愛路四段 85 號 12 樓 B 室　·　電話 <a href="tel:+886227003220">02-2700-3220</a>　·　LINE <a href="https://line.me/R/ti/p/%40665nqsat" target="_blank" rel="noopener">@665nqsat</a>　·　<a href="/consult.html">線上諮詢表單</a></span><br />
+  <a href="/">首頁</a>　·　<a href="https://heshine.tw/linkes7ftpn6/copy-of" target="_blank" rel="noopener">合曜國際法律事務所簡介</a>　·　Copyright © 2026 Yeh Yao-Chun. 保留一切權利。
 </footer>
 
 <script>
@@ -230,7 +242,7 @@
   var caseKind=document.getElementById('caseKind'), caseType=document.getElementById('caseType');
   caseKind.addEventListener('change',function(){
     var list=CASE_TYPES[caseKind.value]||[];
-    caseType.innerHTML='<option value="" disabled selected>請選擇</option>'+list.map(function(o){return '<option>'+o+'</option>';}).join('');
+    caseType.innerHTML='<option value="">請選擇</option>'+list.map(function(o){return '<option>'+o+'</option>';}).join('');
     caseType.disabled=false;
   });
 
@@ -248,9 +260,11 @@
     btn.disabled=true; btn.textContent='送出中…';
     try{
       var data=new FormData(form);
+      Array.from(data.keys()).forEach(function(k){ if(data.get(k)==='') data.delete(k); });
       var res=await fetch('https://api.web3forms.com/submit',{method:'POST',body:data});
       var json=await res.json();
       if(json.success){
+        if(window.yyTrack) yyTrack('generate_lead',{form_name:'consult'});
         document.getElementById('formArea').style.display='none';
         document.getElementById('resultBox').classList.add('show');
         window.scrollTo({top:0,behavior:'smooth'});
@@ -262,5 +276,9 @@
     }
   });
 </script>
+<nav class="mbar" aria-label="快速聯絡" data-loc="mobile_bar">
+  <a class="mb-line" href="https://line.me/R/ti/p/%40665nqsat" target="_blank" rel="noopener">LINE 諮詢</a>
+  <a class="mb-tel" href="tel:+886227003220">撥打電話</a>
+</nav>
 </body>
 </html>

@@ -1,7 +1,7 @@
 /* 網站轉換追蹤：GA4 與 Google Ads 共用的 Google 代碼。
    填入 GA_ID（G- 開頭）後才會載入並送出事件；留空時完全不動作。 */
 (function () {
-  var GA_ID = '';   // GA4 評估 ID，例如 'G-XXXXXXXXXX'
+  var GA_ID = 'G-93JFHLW25H';   // GA4 評估 ID
   var ADS_ID = '';  // Google Ads 轉換 ID（選填），例如 'AW-XXXXXXXXX'
 
   window.dataLayer = window.dataLayer || [];

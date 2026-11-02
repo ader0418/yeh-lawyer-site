@@ -121,8 +121,14 @@
   .nav-links{display:flex;gap:28px}
   .nav-links a{font-family:var(--serif);color:var(--navy);font-size:16px;letter-spacing:.08em}
   .nav-links a:hover{color:var(--rust);text-decoration:none}
-  @media(max-width:680px){.nav-links{gap:16px;font-size:14px}.nav-links a{font-size:14px}}
-  @media(max-width:480px){.nav-links a:nth-child(2){display:none}}
+  .nav-toggle{display:none;background:none;border:none;color:var(--navy);font-size:26px;cursor:pointer;line-height:1;padding:4px 0 4px 12px}
+  @media(max-width:680px){
+    .nav-links{position:fixed;top:74px;left:0;right:0;background:#fff;flex-direction:column;gap:0;max-height:0;overflow:hidden;transition:max-height .34s;border-bottom:1px solid var(--line);z-index:99}
+    .nav-links.open{max-height:460px}
+    .nav-links a{padding:16px 26px;border-bottom:1px solid var(--line);font-size:15px}
+    .nav-line{margin-left:auto}
+    .nav-toggle{display:block}
+  }
 
   .phero{background:var(--navy);color:#fff;padding:56px 26px 48px}
   .phero .inner{max-width:880px;margin:0 auto}
@@ -209,13 +215,14 @@
       <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#B35C45" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M6 21h12"/><path d="M4 7h16"/><path d="M7 7l-3 6a3 3 0 0 0 6 0z"/><path d="M17 7l-3 6a3 3 0 0 0 6 0z"/></svg>
       <span class="bt">葉耀群 律師</span>
     </a>
-    <nav class="nav-links">
+    <nav class="nav-links" id="navlinks">
       <a href="/#services">專業服務</a>
-      <a href="/#articles">法律專欄</a>
+      <a href="/articles/">法律專欄</a>
       <a href="about.html">關於葉律師</a>
       <a href="/#contact">聯絡我們</a>
     </nav>
     <a class="nav-line" href="https://line.me/R/ti/p/%40665nqsat" target="_blank" rel="noopener" aria-label="LINE 線上諮詢"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg><span>LINE 線上諮詢</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="選單" aria-expanded="false" aria-controls="navlinks">☰</button>
   </div>
 </header>
 
@@ -327,5 +334,8 @@
   <a class="mb-tel" href="tel:+886227003220">撥打電話</a>
   <a class="mb-form" href="/consult.html">填表諮詢</a>
 </nav>
+<script>
+(function(){var t=document.getElementById('navToggle'),l=document.getElementById('navlinks');if(!t||!l)return;t.addEventListener('click',function(){var o=l.classList.toggle('open');t.setAttribute('aria-expanded',o?'true':'false')});l.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){l.classList.remove('open');t.setAttribute('aria-expanded','false')})});})();
+</script>
 </body>
 </html>
